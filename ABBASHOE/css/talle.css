@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Tajawal:wght@500;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration: none;
+    border: solid 1px royalblue;
+}
+:root{
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg--color: #fff;
+}
+img{
+    width: 100%;
+}
+body {
+    color: var(--text-color);
+}
+/**/
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+section{
+    padding: 4rem 0 3rem;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+}
+
+.nav{
+    display: flex;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--bg--color);
+    align-items: center;
+    /*justify-content: ;*/
+    padding: 20px 20px;
+}
+
+.logo{
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-right: auto;
+
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--bg--color);
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+}
+
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    
+}
+/*contenedor titulo*/
+.section-title{
+    
+    clear: both; /* Asegura que esté debajo del contenido anterior */
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+    
+}
+
+
+#cart-icon{
+    font-size:1rem;
+    cursor: pointer;
+    margin-right: 15px;
+
+}
+
+
+/*tabla*/
+.tabla{
+    text-align: right;
+}
+
+table {
+    border-collapse: collapse;
+    width: 40%;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 12px; /* Reduce el tamaño de la fuente */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: var(--main-color);
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+
+caption {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen para que se ajuste al contenedor */
+}
+
+
+
+footer {
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    background-image: url('../Imagenes/triangulos.png');
+    background-size: 20px;
+    background-repeat: repeat-x;
+}
+
+footer .contenedor {
+    width: 95%;
+    box-sizing: border-box;
+}
+
+footer .contenedor .box25 {
+    width: 25%;
+    height: 230px;
+    float: left;
+    /*izq*/
+    box-sizing: border-box;
+    margin-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer .contenedor .box25 p {
+    text-align: left;
+    color: rgb(238, 238, 238);
+    margin-left: 15px;
+    margin-top: 15px;
+
+}
+
+footer .contenedor .box25 .cerrado {
+    color: rgb(255, 238, 0);
+}
+
+footer .contenedor .box25 .titulo {
+    color: rgb(238, 238, 238);
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+footer .contenedor .box25 .contacto {
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 5px;
+    display: flex;
+    color: rgb(238, 238, 238);
+}
+
+footer .contenedor .box25 .contacto .icono {
+    width: 30px;
+    height: 30px;
+}
+
+footer .contenedor .box25 .redesSociales {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 15px;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+footer .contenedor .box25 .redesSociales a img {
+    width: 35px;
+}
+
+
+
+
+
+
+footer .contenedor .box50 {
+    width: 50%;
+    height: 230px;
+    float: left;
+    /*izq*/
+    box-sizing: border-box;
+    margin-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.img-talle {
+    float: right; /* Alinea la imagen a la derecha */
+    max-width: 50%; /* Ajusta el tamaño máximo de la imagen al 50% del contenedor */
+    margin-left: 20px; /* Agrega un margen izquierdo para separar la imagen del contenido */
+}
