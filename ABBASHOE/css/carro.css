@@ -199,6 +199,9 @@ disponible cuando sea necesario.*/
     width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
+    max-width: 100%; /* Establece un ancho máximo para evitar que las imágenes se agranden más allá de su tamaño original */
+    display: block; /* Elimina cualquier espacio adicional debajo de las imágenes */
+    margin: 0 auto; /* Centra horizontalmente las imágenes en su contenedor */
 }
 
 .product-title{

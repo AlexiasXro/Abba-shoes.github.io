@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
-@import url('menu.css');
-@import url('banner.css');
-@import url('seccionServicios.css');
-@import url('galeria.css');
-@import url('formularios.css');
-@import url('footer.css');
-
+:root{
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
 * {
     margin: 0;
     /*margenes*/
@@ -62,90 +60,6 @@ header .contenedor img{
     width: 100%;
 }
 
-/*****footer*****/
-footer {
-    background-color: rgb(65, 65, 65);
-    width: 100%;
-    height: 300px;
-    margin-top: 50px;
-    background-image: url('../Imagenes/triangulos.png');
-    background-size: 20px;
-    background-repeat: repeat-x;
-}
-
-footer .contenedor {
-    width: 95%;
-    box-sizing: border-box;
-}
-
-footer .contenedor .box25 {
-    width: 25%;
-    height: 230px;
-    float: left;
-    /*izq*/
-    box-sizing: border-box;
-    margin-top: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-footer .contenedor .box25 p {
-    text-align: left;
-    color: rgb(238, 238, 238);
-    margin-left: 15px;
-    margin-top: 15px;
-
-}
-
-footer .contenedor .box25 .cerrado {
-    color: rgb(255, 238, 0);
-}
-
-footer .contenedor .box25 .titulo {
-    color: rgb(238, 238, 238);
-    margin-left: 15px;
-    margin-top: 15px;
-    text-align: center;
-}
-
-footer .contenedor .box25 .contacto {
-    width: 100%;
-    margin-left: 15px;
-    margin-top: 5px;
-    display: flex;
-    color: rgb(238, 238, 238);
-}
-
-footer .contenedor .box25 .contacto .icono {
-    width: 30px;
-    height: 30px;
-}
-
-footer .contenedor .box25 .redesSociales {
-    display: flex;
-    margin-left: 15px;
-    margin-top: 15px;
-    justify-content: space-evenly;
-    align-items: baseline;
-}
-
-footer .contenedor .box25 .redesSociales a img {
-    width: 35px;
-}
-
-
-
-
-
-
-footer .contenedor .box50 {
-    width: 50%;
-    height: 230px;
-    float: left;
-    /*izq*/
-    box-sizing: border-box;
-    margin-top: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 
 /*****formulario*****/
 input,
@@ -313,115 +227,158 @@ header .contenedor img{
 
 /*menu*/
 nav {
-    width: 100%;
-    /*ancho*/
-    height: 63px;
-    /*alto*/
-    background-color: rgb(111, 67, 122);
-    border-bottom: 7px solid rgb(190, 114, 238);
-    /*border 3 valores (grosor, tipo, color)*/
+    width: 100%; /*ancho*/
+    height: 180px;/*alto*/
+    background-image: url('../img/Marble012_2K-JPG_Color.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-bottom: 7px solid var(--text-color);
     position: fixed;
-    /*elemento va a estar siempre fijo*/
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra en la parte superior */
 }
 
-/*
-.contenedor => class
-#contenedor => id
-*/
-
+nav .contenedor .contenedorB {
+ /* Centra horizontalmente */
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #333; /* Cambia '#333' por el color de fuente que deseas */
+}
 nav .contenedor {
-    width: 90%;
-    height: 63px;
-    position: absolute;
-    margin: 0;
+    width: 50%; /* Ancho del 50% del 'nav' */
+    height: auto;
+     /* Toma toda la altura del 'nav' */
 }
+/*BUSQUEDA*/
+nav .contenedor .formulario-busqueda {
+    margin-right: 3px;
+    /*margen derecho de 1 px*/
+    line-height: 3;
+    display: flex;
+
+}
+
+nav .contenedor .formulario-busqueda input[type="text"] {
+    width: 200px; /* Tamaño deseado para el campo de búsqueda */
+    height: 30px; /* Ajusta la altura según tus preferencias */
+    margin-right: 10px;
+    margin-top: 10px; /* Espacio entre el campo de búsqueda y el botón */
+}
+
+nav .contenedor .formulario-busqueda button[type="submit"] {
+    background-color: var(--text-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+/*FONDO CONTENEDORES*/
 
 nav .contenedor .imgLogo {
-    width: 200px;
-    height: 63px;
+    width: 100px; /* tamaño deseado para tu logo */
+    height: 80px; /* Mantén la misma altura que el contenedor  */
     float: left;
-    /*left = izquierda, right = derecha*/
     box-sizing: border-box;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 nav .contenedor .imgLogo img {
-    max-height: 63px;
+    max-height: 100%;
     float: center;
-    /*left = izquierda, right = derecha*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+
+nav .contenedorB {
+    width: 100%; 
+    height: auto;
+    position:absolute;
+    right: 0;
+    margin-top: 140px;
+}
+
+nav .contenedorB .menu {
     box-sizing: border-box;
 }
 
-nav .contenedor .menu {
-    width: 100%;
-    height: 70px;
-    box-sizing: border-box;
-}
-
-nav .contenedor .menu ul {
+nav .contenedorB .menu ul {
     list-style: none;
     /*sacar cualquier estilo por defecto*/
     box-sizing: border-box;
 }
 
-nav .contenedor .menu ul li {
+nav .contenedorB .menu ul li {
     float: left;
-    height: 63px;
-    width: 170px;
-    margin-right: 1px;
+    height: 50px;
+    width: 180px;
+    margin-right: 3px;
     /*margen derecho de 1 px*/
     line-height: 3;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
-nav .contenedor .menu ul li:hover {
+nav .contenedorB .menu ul li:hover {
     /*hover es por cada vez que pasa el puntero por cada li*/
-    background-color: rgb(111, 67, 122);
-    cursor: zoom-in; /*lupita uwu*/
+    background-color: rgba(0, 0, 0, 0.871);
+    cursor: pointer;
+    border-radius: 4px; /*esquinas redondas xd*/
+    
 }
 
-nav .contenedor .menu ul li a {
+nav .contenedorB .menu ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
     /*font-family: 'Anton', sans-serif;*/
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 22px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.98);
 }
 
-nav .contenedor .menu ul li ul {
+nav .contenedorB .menu ul li ul {
     display: none;
     /*ocultamos el menu*/
 }
 
-nav .contenedor .menu ul li:hover>ul {
+nav .contenedorB .menu ul li:hover>ul {
+    
     /*cuando pasa el punto por el elemento li, mostramos el sub-menu*/
     display: block;
 }
 
-nav .contenedor .menu ul li ul li {
+nav .contenedorB .menu ul li ul li {
     height: 33px;
-    width: 300px;
-    background-color: rgb(111, 67, 122);
+    width: 300px; /*tamaño del sub menu*/
+    background-color: rgba(0, 0, 0, 0.871);
     text-align: start;
     padding-left: 10px;
     line-height: 2;
+    
 }
 
-nav .contenedor .menu ul li ul li a {
+nav .contenedorB .menu ul li ul li a {
     text-decoration: none;
     color: rgb(228, 228, 228);
     /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
     /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-nav .contenedor .menu ul li ul li:hover {
-    background-color: rgb(190, 114, 238);
-    box-shadow: 10px 0px rgb(83, 50, 103);
+nav .contenedorB .menu ul li ul li:hover {
+    background-color:rgba(147, 6, 6, 0.977);
+    box-shadow: 10px 0px rgb(233, 9, 9);
+    cursor: pointer;
 }
 /*eje y -1 desplaza hacia arriba- positivo desplasa hacia abajo
 */
@@ -526,4 +483,37 @@ nav .contenedor .menu ul li ul li:hover {
 
 #seccionServicios .contenedor .cadaDivisorCirugia:hover {
     border-radius: 20px;
+}
+
+/******carrusel*****/
+.section-carrusel {
+    background: #ffffff;
+    text-align: center;
+    padding: 3px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    overflow: hidden; /* Para ocultar el contenido que se desborda */
+    position: relative; /* Para posicionar el carrusel */
+}
+
+.text-carousel {
+    width: 100%; /* Ancho al 100% del contenedor */
+    height: 50px; /* Altura del carrusel */
+    overflow: hidden; /* Ocultar el contenido que excede el tamaño del carrusel */
+    position: relative; /* Establecer posición relativa para los elementos hijos */
+}
+
+.text-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.text-slide.active {
+    opacity: 1;
 }
