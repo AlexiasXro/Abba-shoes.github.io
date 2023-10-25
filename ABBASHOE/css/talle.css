@@ -2,6 +2,8 @@
 /* Importación de fuentes desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Tajawal:wght@500;900&display=swap');
 /* Estilos globales */
+@import url('./Footer.css');
+
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;

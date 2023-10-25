@@ -121,23 +121,3 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//carusel----------------------------------------
-// Seleccionar todos los elementos con la clase "text-slide" y almacenarlos en la variable "slides".
-const slides = document.querySelectorAll(".text-slide");
-let currentIndex = 0;  // Inicializar la variable "currentIndex" con el valor 0 para rastrear la posición actual del slide.
-
-// Función para mostrar un slide específico por su índice.
-function showSlide(index) {
-    slides.forEach((slide) => slide.classList.remove("active"));  // Eliminar la clase "active" de todos los elementos "text-slide".
-    slides[index].classList.add("active");  // Agregar la clase "active" al elemento "text-slide" en la posición "index" para mostrarlo.
-}
-
-// Función para mostrar el próximo slide en la secuencia.
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;  // Calcular el índice del próximo slide (circularmente).
-    showSlide(currentIndex); // Llamar a la función "showSlide" para mostrar el próximo slide.
-}
-
-setInterval(nextSlide, 3000); // Cambiar de diapositiva cada 3 segundos
-showSlide(currentIndex); // Mostrar la primera diapositiva inicialmente
-

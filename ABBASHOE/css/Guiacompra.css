@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Satisfy&family=Tajawal:wght@500;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Playpen+Sans:wght@200;400;800&family=Poppins:wght@400;500;600;700&family=Prompt&family=Satisfy&family=Tajawal:wght@500;900&display=swap');
+
+
+@import url('./anuncio.css');
+@import url('./Footer.css');
+@import url('./Guiacompra.css');
+@import url('');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: #050505;
+    background-image: url(../img/Marble012-2k.jpg);
+    background-repeat: no-repeat;
+    filter: grayscale(0%);/*quita saturacion de color*/
+    margin: 20px;
+    z-index: -1;
+    filter: blur(0px);/*difumina*/
+    position: sticky;
+    
+}
+
+h1 {
+    font-family: 'Playpen Sans';
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+h2 {
+    font-family: 'Playpen Sans';
+    color: #333;
+}
+
+p {
+    color: #555;
+    margin-left: 20px;
+}
+
+.cont {
+    background-color: #fcfcfcd8;
+    max-width: 1068px;
+    padding: 20px;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    border: #d99c00 3px solid;
+    margin-top: 10%;
+
+}
+
+
+
+/* Estilos para enlaces no visitados */
+a.enlace {
+    font-family: 'Playpen Sans';
+    color: #d99c00; /* Color del texto del enlace no visitado */
+    text-decoration: none; /* Quita la subrayado predeterminado */
+    transition: color 0.3s; /* Transición de color al pasar el cursor */
+    font-weight: bold;
+}
+
+/* Estilos para enlaces cuando el cursor está sobre ellos */
+a.enlace:hover {
+    color: #FF4136; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* Estilos para enlaces visitados */
+a.enlace:visited {
+    color: #85144b; /* Color del texto del enlace visitado */
+}
+
+/* Media queries para estilos responsivos */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
