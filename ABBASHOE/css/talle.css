@@ -44,7 +44,7 @@ header {
 }
 
 /* Estilos para el contenedor principal */
-.container {
+.containertalle {
     margin: 10px;
     /*margin:1em auto 2em;/*arriba-horizontal abajo*/
     display: flex; /* Usamos flexbox para distribuir los elementos horizontalmente */
