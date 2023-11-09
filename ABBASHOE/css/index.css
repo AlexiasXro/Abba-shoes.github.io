@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Satisfy&family=Tajawal:wght@500;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Tajawal:wght@500;900&display=swap');
 
-@import url('./anuncio.css');
-@import url('./footer.css');
-@import url('./galeria.css');
-@import url('./in_y.css');
 @import url('./s-carrusel.css');
+@import url('./footer.css');
+@import url('./in_y.css');
+@import url('./general.css');
+@import url('./general2.css');
+
 
 :root{
     --main-color: #fd4646;
@@ -31,10 +32,149 @@ nav {
     background-position: center;
     position: fixed;/*elemento va a estar siempre fijo*/
     display: flex;
+    top: 0;
+    justify-content: center;
+    :root{
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
+* {
+    margin: 0;
+    /*margenes*/
+    padding: 0;
+    /*relleno*/
+    border: solid 1px rgba(114, 237, 100, 0.222);
+}
+
+nav {
+    width: 100%;    /*ancho*/
+    height: 130px;   /*alto*/
+    background-image: url('../img/Marble012-2k.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;/*elemento va a estar siempre fijo*/
+    display: flex;
+    top: 0;
     justify-content: center;
     align-items: flex-end;
     box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.5),
-                0px -5px 5px -5px rgba(0, 0, 0, 0.5);;
+                0px -5px 5px -5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+
+}
+
+nav .Logo {
+    width: 100px;
+    margin: 20px;/
+}
+
+/* Estilo para el logotipo dentro del contenedor */
+.Logo a img {
+    width: 100%;
+    height: auto;
+}
+nav .contenedor  {
+    width: 100%;
+    height: auto;
+    position:relative;
+    margin: 0;
+    justify-content: flex-start;
+
+}
+
+nav .contenedor .menu {
+    width: 100%;
+    height: 10%;
+    box-sizing: border-box;
+
+}
+
+nav .contenedor .menu ul {
+    list-style: none;
+    /*sacar cualquier estilo por defecto*/
+    box-sizing: border-box;
+}
+
+nav .contenedor .menu ul li {
+    float: right;
+    height: 50px;
+    width: 230  px;
+    margin-right: 10px;
+    /*margen derecho de 1 px*/
+    line-height: 2;
+    text-align: center;
+
+}
+
+nav .contenedor .menu ul li:hover {
+    /*hover es por cada vez que pasa el puntero por cada li*/
+    border-radius: 2px;
+    box-shadow:
+    0px 0px 5px rgb(23, 20, 39, 0.9),
+    0px 0px 5px rgb(23, 20, 39, 0.9),
+    0px 0px 5px rgb(23, 20, 39, 0.9),
+    0px 0px 5px rgb(23, 20, 39, 0.3);
+
+}
+
+nav .contenedor .menu ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
+nav .contenedor .menu ul li ul {
+    display: none;
+    /*ocultamos el menu*/
+    position:absolute;
+    top: 100%;
+    left:0;
+}
+
+nav .contenedor .menu ul li:hover>ul {
+     /* Alinearlo a la izquierda del elemento padre */
+    display: block;
+    margin-top: -1px; /* Un margen negativo  */
+}
+
+nav .contenedor .menu ul li ul li {
+    height: 40px;
+    width: 300px;
+    background-color: #171427cc;
+    text-align: start;
+    padding-left: 10px;
+    line-height: 2;
+}
+
+nav .contenedor .menu ul li ul li a {
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+nav .contenedor .menu ul li ul li:hover {
+    background-color: #fd4646;
+    box-shadow: 10px 0px #7b1515;
+}
+
+.menu ul li {
+    backdrop-filter: blur(3px);
+}
+
+
+    align-items: flex-end;
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.5),
+                0px -5px 5px -5px rgba(0, 0, 0, 0.5);
     z-index: 1;
 
 }

@@ -1,5 +1,8 @@
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Tajawal:wght@500;900&display=swap');
+@import url('../footer.css');
+@import url('../in_y.css');
+
 
 *{
     font-family: 'Poppins', sans-serif;

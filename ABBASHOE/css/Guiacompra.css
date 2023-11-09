@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Satisfy&family=Tajawal:wght@500;900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Playpen+Sans:wght@200;400;800&family=Poppins:wght@400;500;600;700&family=Prompt&family=Satisfy&family=Tajawal:wght@500;900&display=swap');
 
 
-@import url('./anuncio.css');
-@import url('./Footer.css');
-@import url('./Guiacompra.css');
-@import url('');
+@import url('./s-carrusel.css');
+@import url('./footer.css');
+
 
 *{
     margin: 0;

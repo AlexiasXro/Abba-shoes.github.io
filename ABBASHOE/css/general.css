@@ -1,14 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Satisfy&family=Tajawal:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Tajawal:wght@500;900&display=swap');
+
+
+.contenedor {
+    text-align: center;
+    width: 40%;
+}
+
 #seccionPrincipal {
-    padding-top: 500px;
+    padding-top: 230px;
     display: flex;
-    align-items: center; /* Alinea verticalmente en el centro */
-    justify-content: center; /* Alinea horizontalmente en el centro */
+    align-items: center;
+    justify-content: center;
     height: 100vh;
+    opacity: 0; /* Inicialmente oculta la sección */
 }
-#seccionPrincipal .contenedor {
-    text-align: center; /* Alinea el contenido dentro del contenedor en el centro */
-    width: 30%; /* Ancho del contenedor */
+
+.fade-in {
+    animation: fadeIn 1s ease-in forwards;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(0, 20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+.animation-box {
+    border: 8px solid rgba(17, 14, 27, 0.799);
+    padding: 20px;
+    background-color: rgba(251, 251, 252, 0.93);
+    box-shadow: 0px 5px 5px -5px rgba(17, 14, 27, 0.93),
+                0px -5px 5px -5px rgba(17, 14, 27, 0.93);
+
+}
+
+.color-change {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Fuente Creativa', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    animation: shadowBlink 5s infinite;
+}
+
+@keyframes shadowBlink {
+    0% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        text-shadow: none; 
+    }
+    100% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+
+h1, h2, p {
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Lobster', cursive; 
+    font-size: 36px; 
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px; /
+    margin-bottom:20px;
+}
+
+
 
 #seccionGaleria {
     width: 100%;
