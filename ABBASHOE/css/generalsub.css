@@ -1,37 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Satisfy&family=Tajawal:wght@500;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Playpen+Sans:wght@200;400;800&family=Poppins:wght@400;500;600;700&family=Prompt&family=Satisfy&family=Tajawal:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Tajawal:wght@500;900&display=swap');
+
+@import url('./menu.css');
+@import url('./ABBASHOE/css/s-carrusel.css');
+@import url('./ABBASHOE/css/footer.css');
+@import url('');
+@import url('');
 
 
-@import url('./s-carrusel.css');
-@import url('./footer.css');
+:root{
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
 
-
-*{
+* {
     margin: 0;
+    /*margenes*/
     padding: 0;
-    
+    /*relleno*/
+    border: solid 1px rgba(100, 164, 237, 0.652);
 }
 
 body {
-    background-color: #050505;
-    background-image: url(../img/Marble012-2k.jpg);
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con 30% de transparencia */
     background-repeat: no-repeat;
-    filter: grayscale(0%);/*quita saturacion de color*/
+    filter: grayscale(0%); /* Quita la saturación de color */
     margin: 20px;
     z-index: -1;
-    filter: blur(0px);/*difumina*/
+    filter: blur(0px); /* Difumina */
     position: sticky;
-    
 }
+.contenedor {
+    text-align: center;
+    width: 40%;
+}
+
+
 
 h1 {
     font-family: 'Playpen Sans';
     text-align: center;
-    background-color: #333;
-    color: #fff;
+    background-image: url(../img/Marble012-2k.jpg);
+    color: #080808;
     padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.606);
 }
 
 h2 {
@@ -44,13 +59,13 @@ p {
     margin-left: 20px;
 }
 
+
 .cont {
-    background-color: #fcfcfcd8;
     max-width: 1068px;
     padding: 20px;
     display: block;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.402);
     width: 70%;
     height: 70%;
     margin: auto;

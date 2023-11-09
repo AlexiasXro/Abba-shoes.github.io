@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow">
     <title>Abba Shoe Calzado para Toda la Familia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/general.css">
 
 </head>
 
@@ -36,23 +36,48 @@
                 <a href="#">
                     <img src="../ABBASHOE/img/logos/logo.png" alt="#">
                 </a>
-                
             </div>
-
         </div>
 
         <div class="contenedor">
 
             <div class="menu" >
                 <ul>
-                    <li>
-                        <a href="../ABBASHOE/html/carro.html">OFERTAS</a>
+                    <li class="busqueda">
+                        <input type="text" id="busqueda" placeholder="Buscar...">
+                        <button id="btn-busqueda">Buscar</button>
                     </li>
                     <li>
-                        <a href="../ABBASHOE/html/carro.html">NUEVO INGRESO</a>
+                        <a href="">REGISTRATE</a>
+                        <ul>
+                            <li><a href="#">CREAR CUENTA</a></li>
+                            <li><a href="#">INICIAR</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="./html/carro.html">CATALOGO</a>
+                        <a href="">ACERCA DE NOSOTROS</a>
+                        <ul>
+                            <li><a href="#">LOCAL</a></li>
+                            <li><a href="#">CONTACTO</a></li>
+                            <li><a href="./html/info.html">HISTORIA</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./html/InfoPagos.html">PREGUNTAS FRECUENTES</a>
+                        <ul>
+                            <li><a href="./html/talle.html">TALLE</a></li>
+                            <li><a href="./html/Guia.html">COMO COMPRAR</a></li>
+                            <li><a href="/ABBASHOE/html/InfoPagos.html">METODOS DE PAGO</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">CARRO DE COMPRAS</a>
+                    </li>
+                    <li>
+                        <a href="#">FAVORITOS</a>
+                    </li>
+                    <li>
+                        <a href="">CATALOGO</a>
                         <ul>
                             <li><a href="#">MUJERES</a></li>
                             <li><a href="#">HOMBRES</a></li>
@@ -64,32 +89,6 @@
 
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">ENVIOS</a>
-                        <ul>
-                            <li><a href="/ABBASHOE/html/talle.html">TALLE</a></li>
-                            <li><a href="/ABBASHOE/html/Guia.html">COMO COMPRAR</a></li>
-                            <li><a href="/ABBASHOE/html/InfoPagos.html">METODOS DE PAGO</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./html/InfoPagos.html">COMPRAS</a>
-                    </li>
-                    <li>
-                        <a href="/ABBASHOE/html/">QUIENES SOMOS</a>
-                        <ul>
-                            <li><a href="#">LOCAL</a></li>
-                            <li><a href="#">COMUNICATE</a></li>
-                            <li><a href="/ABBASHOE/html/info.html">HISTORIA</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="/ABBASHOE/html/formulario.html">REGISTRATE</a>
-                        <ul>
-                            <li><a href="#">CREAR CUENTA</a></li>
-                            <li><a href="#">INICIAR</a></li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -98,7 +97,7 @@
     <header>
         <div class="cvideo">
             <div>
-                <video width="100%"  autoplay muted loop>
+                <video id="miVideo" width="100%"  autoplay muted loop>
                     <source src="../ABBASHOE/img/Nike Japan’s Air Max Day 3D Billboard.mp4" type="video/mp4">
                 </video>
             </div>
@@ -201,7 +200,7 @@
 
             </div>
         </footer>
-
+    <script src="./js/main.js"></script>
     <script src="./js/anuncio.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
