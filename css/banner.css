@@ -1,0 +1,11 @@
+
+/* Anular márgenes y rellenos */
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-control-prev,
+.carousel-control-next {
+  margin: 0;
+  padding: 0;
+ 
+}

@@ -1,0 +1,143 @@
+
+/*MENU*/
+
+
+
+nav .busqueda {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+
+nav .busqueda input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 170px; /* Ancho del campo de búsqueda */
+}
+
+nav .busqueda button {
+    padding: 5px 10px;
+    background-color: rgba(23, 20, 39, 0.929);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+/***************************/
+
+nav {
+    width: 100%;
+    height: auto;
+    position:relative;
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    /*justify-content: flex-start;*/
+}
+
+nav  ul {
+    list-style: none;/*sacar cualquier estilo por defecto*/
+    box-sizing: border-box;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+nav  ul li ul {
+    display: none;
+    /*ocultamos el menu*/
+    position:relative;
+    top: 100%;
+    left:0;/**/
+}
+
+nav  ul li:hover>ul {
+     /* Alinearlo a la izquierda del elemento padre */
+    display: block;
+    
+}
+
+nav  ul li ul li {
+    height: 40px;
+    width: 300px;
+    background-color: #171427cc;
+    text-align: start;
+    padding-left: 10px;
+    line-height: 2;
+    z-index: 2; /**/
+    
+}
+
+nav  ul li ul li a {
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+
+
+.navbar {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar {
+    position: relative;
+    z-index: 2; /* Asegura que el menú esté en un nivel superior */
+}
+
+.carousel {
+    position: relative;
+    z-index: 1; /* Asegura que el carrusel esté en un nivel inferior */
+}
+.dropdown-menu {
+    position: absolute;
+    z-index: 3; /* Asegura que el submenú esté en un nivel superior */
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 20px; /* Tamaño de fuente más grande, ajusta este valor según tu preferencia */
+}
+/* Submenú estilo neón y fondo al pasar el cursor */
+.navbar .dropdown-menu {
+    background-color: #22262a; /* Color de fondo inicial */
+    
+}
+
+
+.navbar .dropdown-item {
+    color: #dedede; /* Color de texto negro */
+    font-size: 20px; /* Tamaño de fuente más grande */
+    text-shadow:2px 2px 4px c; /* Sombra de texto en verde */
+}
+
+.navbar .dropdown-item {
+    transition: background-color 0.3s ease; /* Agregar transición */
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #00ffd96b; /* Color de fondo al pasar el cursor */
+    text-shadow: 2px 2px 4px rgb(26, 27, 27); /* Sombra al pasar el cursor */
+}
+
+.card {
+    color: rgba(0, 0, 0, 0.5); /* Cambiar el color del texto a negro con transparencia */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregar sombra al texto */
+    background-size: cover; /* Hacer que la imagen de fondo cubra completamente la tarjeta */
+    background-position: center; /* Alinear la imagen de fondo al centro */
+    border: #00ffd96b 3px solid; /* Establecer un borde con color especificado */
+}
+
+
+
+

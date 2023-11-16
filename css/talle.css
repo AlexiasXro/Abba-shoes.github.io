@@ -1,0 +1,91 @@
+
+/* Importación de fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Tajawal:wght@500;900&display=swap');
+/* Estilos globales */
+@import url('./Footer.css');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 3rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    /*box-shadow: 3px 2px 2px rgba(8, 8, 8, 0.514); solo para objetos flotantes o letras*/
+}
+/* Variables personalizadas para colores */
+:root{
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg--color: #fff;
+}
+/* Fondo con desenfoque */
+body::before {
+    content: "";
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%), url('../img/fondo\ talles.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px); /* Aplica un filtro de desenfoque al fondo del body */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #88600ba5; /* Color de fondo del header */
+    color: #1c1c1bf9; /* Color de texto del header */
+    padding: 20px;
+}
+
+/* Estilos para el contenedor principal */
+.containertalle {
+    margin: 10px;
+    /*margin:1em auto 2em;/*arriba-horizontal abajo*/
+    display: flex; /* Usamos flexbox para distribuir los elementos horizontalmente */
+    width: 90%;
+    justify-content: space-around;
+    gap: 1em;
+    flex-direction: row;
+    flex-wrap: wrap;
+     /* Ajusta elementos en filas adicionales cuando no caben */
+}
+
+/* Estilos para la tabla */
+table{
+    width: 100%;
+    max-width: 25rem;
+    box-shadow: 0.2rem 0.133333rem 0.133333rem rgba(8, 8, 8, 0.514);
+    border: solid 3px var(--text-color);
+    margin: 1.333333rem auto;
+}
+
+
+/* Estilos para las celdas de la tabla */
+.container th, .container td {
+    padding: 0.133333rem;
+    text-align: center;
+    border: solid 1px var(--text-color);
+    background-color: rgba(255, 255, 255, 0.806);
+
+}
+/* Estilos para la imagen */
+.container .talle img {
+    /*max-width: 80%;*/
+    display: block;
+    margin: 0.133333rem auto;
+    background-color: rgba(255, 255, 255, 0.494);
+}
+/* Media query para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    table {
+        max-width: 100%;
+    }

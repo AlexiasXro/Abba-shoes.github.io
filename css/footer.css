@@ -1,0 +1,91 @@
+
+.pie-pagina{
+    height: 90%;
+    width: 100%;
+    background-color: #343a40;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid: gap 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h3{
+    color: rgb(250, 250, 250);
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.584);
+}
+
+.cerrado {
+    text-shadow: 2px 2px 4px rgba(213, 20, 20, 0.793);
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+
+.pie-pagina .grupo-1 .red-social img{
+    display: inline-block;
+    width: 55px;
+    height: 45px;
+    line-height: 45px;
+    color: #efefef;
+    margin-right: 10px;
+    background-color:rgb(28, 28, 54) ;
+    text-align: center;
+    transition: all 0.3s;
+
+}
+
+.box .l a{
+    display: block; 
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+    transition: all 0.3s; 
+}
+.box .l a:hover { 
+    transform: scale(0.97); /* Escalar el tamaño del texto */
+}
+.box .icon:hover {
+    transform: scale(1.3);
+}
+
+.pie-pagina .grupo-2{
+    background-color: #343a40;
+    padding: 20px 10px;
+    text-align:center;
+    color: #fff;
+    
+} 
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid: gap 30px;
+        padding: 35px 0px;
+    }
+    
+}
