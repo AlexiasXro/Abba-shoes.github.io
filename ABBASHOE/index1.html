@@ -14,8 +14,10 @@
             
             <link rel="stylesheet" href="../ABBASHOE/css/menu.css">
             <link rel="stylesheet" href="../ABBASHOE/css/newgeneral.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
             
-    </head>
+    
+        </head>
 <body>
     <div class="section-carrusel">
         <div class="text-carousel">
@@ -31,167 +33,214 @@
         </div>
     </div>
 
-    <header>
-        <div class="nav contenedor">
-        <!--Menu-->
-            <nav>
-                <a href="../index.html"class="logo">Abba Shoe</a>
-                
-
-                    <div class="menu" >
-                        <ul>
-                            <li class="busqueda">
-                                <input type="text" id="busqueda" placeholder="Buscar...">
-                                <button id="btn-busqueda">Buscar</button>
-                            </li>
-                            <li>
-                                <a href="">REGISTRATE</a>
-                                <ul>
-                                    <li><a href="#">CREAR CUENTA</a></li>
-                                    <li><a href="#">INICIAR</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">ACERCA DE NOSOTROS</a>
-                                <ul>
-                                    <li><a href="#">LOCAL</a></li>
-                                    <li><a href="#">CONTACTO</a></li>
-                                    <li><a href="./html/info.html">HISTORIA</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="./html/InfoPagos.html">PREGUNTAS FRECUENTES</a>
-                                <ul>
-                                    <li><a href="./html/talle.html">TALLE</a></li>
-                                    <li><a href="./html/Guia.html">COMO COMPRAR</a></li>
-                                    <li><a href="/ABBASHOE/html/InfoPagos.html">METODOS DE PAGO</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">CARRO DE COMPRAS</a>
-                            </li>
-                            <li>
-                                <a href="#">FAVORITOS</a>
-                            </li>
-                            <li>
-                                <a href="">CATALOGO</a>
-                                <ul>
-                                    <li><a href="#">MUJERES</a></li>
-                                    <li><a href="#">HOMBRES</a></li>
-                                    <li><a href="#">NIÑOS</a></li>
-                                    <li><a href="#">ZAPATILLAS</a></li>
-                                    <li><a href="#">BOTAS</a></li>
-                                    <li><a href="#">ZANDALIAS</a></li>
-                                    <li><a href="#">ZAPATOS</a></li>
-                                    <li><a href="#">ACCESORIOS</a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-            </nav>
-        </div>
-    <!-- <header>
-        <div class="cvideo">
-            <div>
-                <video id="miVideo" width="100%"  autoplay muted loop>
-                    <source src="../ABBASHOE/img/Nike Japan’s Air Max Day 3D Billboard.mp4" type="video/mp4">
-                </video>
+    <!--MENU con boostrap-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="../ABBASHOE/img/logos/LOGO-ABBA.jpeg" alt="Logo de Abba Shoe" width="80" height="80" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Registrarse
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="#">Crear cuenta</a>
+                            <a class="dropdown-item" href="#">Iniciar sesión</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Acerca de nosotros
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="#">Local</a>
+                            <a class="dropdown-item" href="#">Contacto</a>
+                            <a class="dropdown-item" href="./html/info.html">Historia</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Preguntas Frecuentes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                            <a class="dropdown-item" href="./html/talle.html">Talle</a>
+                            <a class="dropdown-item" href="./html/Guia.html">Cómo comprar</a>
+                            <a class="dropdown-item" href="/ABBASHOE/html/InfoPagos.html">Métodos de pago</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Carro de compras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Favoritos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Catálogo
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                            <a class="dropdown-item" href="#">Mujeres</a>
+                            <a class="dropdown-item" href="#">Hombres</a>
+                            <a class="dropdown-item" href="#">Niños</a>
+                            <a class="dropdown-item" href="#">Zapatillas</a>
+                            <a class="dropdown-item" href="#">Botas</a>
+                            <a class="dropdown-item" href="#">Sandalias</a>
+                            <a class="dropdown-item" href="#">Zapatos</a>
+                            <a class="dropdown-item" href="#">Accesorios</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
             </div>
-        </div> --->
-    </header>
-
-
-    <section class="seccionPrincipal" class="fade-in">
-        <div class="contenedor">
-            <article>
-                <div class="animation-box">
-                    <h1>ABBA SHOE</h1>
-                    <h2>pensando en vos!</h2>
-                    <p>
-                        En ABBA SHOES, creemos que la elección de calzado va más
-                        allá de la moda y se convierte en una expresión de tu estilo
-                        personal. No solo es una declaración de elegancia, sino también un pilar 
-                        fundamental para tu comodidad y bienestar en tu día a día.
-                    </p>
+        </nav>
+    </div>
+    
+    
+        
+    <div class="container-fluid">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../ABBASHOE/img/flasherH1915-744/1.png" class="d-block w-100" style="width: 100%; height: 600px;" alt="Primera Imagen">
                 </div>
-            </article>
+                <div class="carousel-item">
+                    <img src="../ABBASHOE/img/flasherH1915-744/2.png" class="d-block w-100" style="width: 100%; height: 600px;" alt="Segunda Imagen">
+                </div>
+                <div class="carousel-item">
+                    <img src="../ABBASHOE/img/flasherH1915-744/3.png" class="d-block w-100" style="width: 100%; height: 600px;" alt="Tercera Imagen">
+                </div>
+                <div class="carousel-item">
+                    <img src="../ABBASHOE/img/flasherH1915-744/4.png" class="d-block w-100" style="width: 100%; height: 600px;" alt="Tercera Imagen">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+    
+    <section class="seccionPrincipal py-5">
+        <div class="container py-">
+            <div class="row">
+                <div class="col mx-auto">
+                    <h1>ABBA SHOE</h1>
+                    <h2 >pensando en vos!</h2>
+                    <p>En ABBA SHOES, creemos que la elección de calzado va más
+                    allá de la moda y se convierte en una expresión de tu estilo
+                    personal. No solo es una declaración de elegancia, sino también un pilar 
+                    fundamental para tu comodidad y bienestar en tu día a día.</p>
+                </div>
+            </div>
         </div>
     </section>
-
-    <section id="seccionServicios">
-        <div class="contenedor">
-            <div class="temporada">
-                <h1>Fiestas Inolvidables</h1>
-                <p>te acompañamos en tu búsqueda de los zapatos perfectos para fiestas. Explora nuestra gama de estilos que van desde zapatos
-                    elegantes hasta tacones de fiesta deslumbrantes.</p>
+    
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../ABBASHOE/img/marke/fiest.jpeg" class="card-img-top rounded-circle" alt="Zapatos para fiestas">
+                    <div class="card-body">
+                        <h5 class="card-title">Fiestas Inolvidables</h5>
+                        <p class="card-text">Te acompañamos en tu búsqueda de los zapatos perfectos para fiestas. Explora nuestra gama de estilos que van desde zapatos elegantes hasta tacones de fiesta deslumbrantes.</p>
+                        <a href="#" >Ver más</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="cont-mujer">
-                <h1>Tu Compañero de Entrenamiento</h1>
-                <p>Explora nuestra amplia gama de estilos que van desde
-                    zapatillas para correr hasta calzado
-                    específico para deportes en equipo.</p>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../ABBASHOE/img/marke/deport.jpeg" class="card-img-top " alt="Calzado deportivo">
+                    <div class="card-body card border-info mb-3">
+                        <h5 class="card-title">Tu Compañero de Entrenamiento</h5>
+                        <p class="card-text">Explora nuestra amplia gama de estilos que van desde zapatillas para correr hasta calzado específico para deportes en equipo.</p>
+                        <a href="#" ">Ver más</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="cont-hombre">
-                <h1>Verano en tus Pies</h1>
-                <p>Tdurante el verano, la elección de calzado es esencial para 
-                    disfrutar al máximo de tus aventuras bajo el sol.</p>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../ABBASHOE/img/marke/zapa niños.webp" class="card-img-top rounded-circle" alt="Calzado de verano">
+                    <div class="card-body">
+                        <h5 class="card-title">Verano en tus Pies</h5>
+                        <p class="card-text">Durante el verano, la elección de calzado es esencial para disfrutar al máximo de tus aventuras bajo el sol.</p>
+                        <a href="#" ">Ver más</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="cont-accesorios">
-                <h1>Accesorios</h1>
-                <p> ¡Caminemos juntos en esta emocionante etapa de la vida!</p>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../ABBASHOE/img/marke/acc.jpeg" class="card-img-top rounded-circle" alt="Accesorios">
+                    <div class="card-body">
+                        <h5 class="card-title">Accesorios</h5>
+                        <p class="card-text">¡Caminemos juntos en esta emocionante etapa de la vida!</p>
+                        <a href="#" ">Ver más</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+    
 
 
+        <!--Footer o pie de pagina-->
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#" >
+                            <img src="../ABBASHOE/img/logos/LOGO-ABBA.jpeg" alt="Logo de Abba Shoe">
+                        </a>
+                    </figure>
+                </div>
 
-<!--Footer o pie de pagina-->
-        <footer>
-            <div class="contenedor">
-                <div class="boxf">
-                    <h3 class="titulo">Abierto</h3>>
+                <div class="box">
+                    <h3 class="titulo">Horarios Abierto</h3>
                     <p>Lunes a Miércoles de 07:30 a 10:30 hs</p>
                     <p>Jueves 12:30 a 18:30 hs</p>
                     <p>Viernes 14:30 a 20:30 hs</p>
                     <p>Sábado 09:00 a 11:00 hs</p>
                     <p class="cerrado">Domingo cerrado</p>
-                </div>
-
+                    </div>
                 
 
-                <div class="boxf1">
-                    !--redes sociales y + info--
-                    <h3 class="titulo">Contacto</h3>
-                    <div class="contacto">
-                        <img src="imagenes/Iconos/ubicacion.png" class="icono">
-                        Bartolome Mitre, Sáenz Peña, Chaco
+                <div class="box">
+                    <h3 class="titulo">SIGUENOS</h3>
+                    <div class="red-social">
+                        <a href="#"></a><img src="./img/favicon/tienda.png" class="icon" alt=""></a>
+                        <a href="#"></a><img src="./img/favicon/WPP.png" class="icon" alt=""></a>
+                        <a href="#"></a><img src="./img/favicon/ffaacee.png" class="icon" alt=""></a>
+                        <a href="#"></a><img src="./img/favicon/Insta.png" class="icon" alt=""></a>
                     </div>
-
-                    <div class="boxf3">
-                        <img src="imagenes/Iconos/whatsapp.png" class="icono">
-                        +543644425138
+                    <div class="l">
+                    <a href="">Direción: Barrio San Calletano</a>
+                    <a href="#">WhatsApp +5493644</a> 
+                    <a href="#">Nosotros</a>
+                    <a href="#">Cómo comprar</a>
+                    <a href="#">Preguntas Frecuentes</a>
                     </div>
-
-
-                    <div class="boxf4">
-                        !--<a href="#" target="_blank"><img src="imagenes/Iconos/facebook.png"></a>
-                        <a href="#" target="_blank"><img src="imagenes/Iconos/instagram.png"></a>
-                        <a href="#" target="_blank"><img src="imagenes/Iconos/twitter.png"></a>
-                        <a href="#" target="_blank"><img src="imagenes/Iconos/youtube.png"></a>--
-                        <i class='bx bxl-instagram' src="https://www.instagram.com/abba.shoe/"></i>
-                        <i class='bx bxl-facebook-circle'src="#" >no tiene</i>
-                        <i class='bx bxl-whatsapp' src="https://wa.me/+5493644454650/?text=urlencodedtext donde" >mod</i>
-                        <i class='bx bxl-youtube' >no hay xd</i>
-                    </div>
+            
                 </div>
-
-
+            </div>
+        
+            <div class="grupo-2">
+                <small>&copy;2023<b> KNDAlexias </b>- Todo los Derechos Reservados. </small>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="./js/anuncio.js"></script>
 </body>
 </html>

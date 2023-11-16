@@ -9,10 +9,7 @@ nav .busqueda {
     margin-right: 10px;
 
 }
-.nav .contenedor .busqueda {
-    order: 1; /* Cambia el orden de la búsqueda */
-    /* Otros estilos para el campo de búsqueda */
-}
+
 
 nav .busqueda input[type="text"] {
     padding: 5px;
@@ -45,125 +42,102 @@ nav {
     /*justify-content: flex-start;*/
 }
 
-nav .menu {
-    width: 100%;
-    height: 10%;
-    box-sizing: border-box;
-    display: flex;
-
-}
-
-nav .menu ul {
+nav  ul {
     list-style: none;/*sacar cualquier estilo por defecto*/
     box-sizing: border-box;
     flex-direction: column;
     align-content: center;
-    border: solid 2px rgba(225, 0, 255, 0.524);
+    
 }
 
-nav .menu ul li {
-    float: right;
-    height: 50px;
-    width: auto;
-    margin-right: 10px;/*margen derecho de 1 px*/
-    text-align: center;
-    line-height: 50px;
-    backdrop-filter: blur(3px);
-
-}
-
-nav .menu ul li:hover {
-    /*hover es por cada vez que pasa el puntero por cada li*/
-    border-radius: 2px;
-    box-shadow:
-    0px 0px 5px rgb(23, 20, 39, 0.9),
-    0px 0px 5px rgb(23, 20, 39, 0.9),
-    0px 0px 5px rgb(23, 20, 39, 0.9),
-    0px 0px 5px rgb(23, 20, 39, 0.3);
-
-}
-
-nav .menu ul li a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
-}
-
-
-nav .menu ul li ul {
+nav  ul li ul {
     display: none;
     /*ocultamos el menu*/
-    position:absolute;
+    position:relative;
     top: 100%;
     left:0;/**/
 }
 
-nav .menu ul li:hover>ul {
+nav  ul li:hover>ul {
      /* Alinearlo a la izquierda del elemento padre */
     display: block;
-    margin-top: -1px; /* Un margen negativo  */
+    
 }
 
-nav .menu ul li ul li {
+nav  ul li ul li {
     height: 40px;
     width: 300px;
     background-color: #171427cc;
     text-align: start;
     padding-left: 10px;
-    line-height: 2; /**/
+    line-height: 2;
+    z-index: 2; /**/
     
 }
 
-nav .menu ul li ul li a {
+nav  ul li ul li a {
     text-decoration: none;
     color: rgb(228, 228, 228);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
 }
 
-nav .menu ul li ul li:hover {
-    background-color: #fd4646;
-    box-shadow: 10px 0px rgba(255, 166, 0, 0.49) 
+
+
+.navbar {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar {
+    position: relative;
+    z-index: 2; /* Asegura que el menú esté en un nivel superior */
+}
+
+.carousel {
+    position: relative;
+    z-index: 1; /* Asegura que el carrusel esté en un nivel inferior */
+}
+.dropdown-menu {
+    position: absolute;
+    z-index: 3; /* Asegura que el submenú esté en un nivel superior */
 }
 
 
-@media (max-width: 1080px) {
-    .nav {
-        padding: 15px;
-    }
-    section {
-        padding: 3rem 0 2 rem;
-    }
-    .container {
-        margin: 0 auto;
-        width: 90%;
-    }
-    .shop {
-        margin-top: 2rem !important;
-    }
+.navbar-nav .nav-link {
+    font-size: 20px; /* Tamaño de fuente más grande, ajusta este valor según tu preferencia */
+}
+/* Submenú estilo neón y fondo al pasar el cursor */
+.navbar .dropdown-menu {
+    background-color: #22262a; /* Color de fondo inicial */
+    
 }
 
-@media (max-width: 400px) {
-    .nav {
-        padding: 11px;
-    }
-    .logo {
-        font-size: 1rem;
-    }
-    .cart {
-        width: 320px;
-    }
+
+.navbar .dropdown-item {
+    color: #dedede; /* Color de texto negro */
+    font-size: 20px; /* Tamaño de fuente más grande */
+    text-shadow:2px 2px 4px c; /* Sombra de texto en verde */
 }
 
-@media (max-width: 360px) {
-    .shop {
-        margin-top: 1rem !important;
-    }
-    .cart {
-        width: 280px;
-    }
+.navbar .dropdown-item {
+    transition: background-color 0.3s ease; /* Agregar transición */
 }
+
+.navbar .dropdown-item:hover {
+    background-color: #00ffd96b; /* Color de fondo al pasar el cursor */
+    text-shadow: 2px 2px 4px rgb(26, 27, 27); /* Sombra al pasar el cursor */
+}
+
+.card {
+    color: rgba(0, 0, 0, 0.5); /* Cambiar el color del texto a negro con transparencia */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregar sombra al texto */
+    background-size: cover; /* Hacer que la imagen de fondo cubra completamente la tarjeta */
+    background-position: center; /* Alinear la imagen de fondo al centro */
+    border: #00ffd96b 3px solid; /* Establecer un borde con color especificado */
+}
+
+
+
+
