@@ -1,0 +1,36 @@
+
+
+.container-fluid-custom {
+    padding: 0;
+    margin: 0;
+}
+.custom-container {
+    padding-top: 80px; 
+    padding-bottom: 80px; 
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+
+}
+
+
+.card {
+    transition: all 0.3s ease; /* cambios de estados en la animación del borde */
+    border: 2px solid transparent; 
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* animación del borde */
+@keyframes borderAnimation {
+    0% { border-color: #00ffd9; }
+    25% { border-color: #ff00ff; }
+    50% { border-color: #ff9900; }
+    75% { border-color: #33cc33; }
+    100% { border-color: #00ffd9; }
+}
+
+
+.card:hover {
+    animation: borderAnimation 2s infinite; 
+    transform: scale(1.05);
+} 
