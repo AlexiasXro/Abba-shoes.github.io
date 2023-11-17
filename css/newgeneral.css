@@ -1,7 +1,7 @@
 
 @import url('../css/s-carrusel.css');
-
 @import url('../css/footer.css');
+@import url('../css/menu.css');
 
 
 /*Google fonts*/
@@ -15,6 +15,7 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Tajawal', sans-serif;
 */
+
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -91,7 +92,10 @@ header {
 }
 
 
-
+.container-fluid-custom {
+    padding: 0;
+    margin: 0;
+}
 
 
 

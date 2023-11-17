@@ -1,35 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta name="author" content="Caceres Romina">
+            <meta name="author" content="Caceres Alejandra Romina">
             <meta name="description" content="Zapatería Abba Shoe: Encuentra el calzado perfecto para hombres, mujeres y niños. Variedad de estilos y tallas.">
             <meta name="keywords" content="zapatería, calzado, zapatos, botas, zapatillas, moda, calidad">
             <meta name="robots" content="index, follow">
-            <title>AbbaShoe</title>
+            <title>Historia</title>
             
-            
-            <link rel="stylesheet" href="./css/menu.css">
-            <link rel="stylesheet" href="./css/newgeneral.css">
+            <link rel="stylesheet" href="../../css/newgeneral.css">
+            <link rel="stylesheet" href="../../css/s-carrusel.css">
+            <link rel="stylesheet" href="../../css/menu.css">
+
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <!--cssnosotros-->
             <style>
-                .container-fluid-custom {
+                 .container-fluid-custom {/* modificacion personal para ocupar todo el ancho de la pag*/
                     padding: 0;
                     margin: 0;
                 }
-                .custom-container {
+                
+                .custom-container {/* espacio entre el footer y el menu*/
                     padding-top: 80px; 
                     padding-bottom: 80px; 
                     margin-top: 50px; 
                     margin-bottom: 50px; 
                 
                 }
-            </style>
-    
+
+                .custom-margin-large {
+                    margin-bottom: 100px; /* espacio ente row texto*/
+                }
+              </style>
         </head>
 <body>
     <div class="section-carrusel">
@@ -48,9 +53,9 @@
 
     <!--MENU con boostrap-->
     <div class="container-fluid container-fluid-custom">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-light">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark bg-light">
             <a class="navbar-brand" href="#">
-                <img src="./img/logos/LOGO-ABBA.jpeg" alt="Logo de Abba Shoe" width="80" height="80" class="d-inline-block align-top">
+                <img src="../../img/logos/LOGO-ABBA.jpeg" alt="Logo de Abba Shoe" width="80" height="80" class="d-inline-block align-top">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -71,9 +76,9 @@
                             Acerca de nosotros
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <a class="dropdown-item" href="./html/pages/Local.html">Local</a>
-                            <a class="dropdown-item" href="./html/pages/contactanos.html">Contacto</a>
-                            <a class="dropdown-item" href="./html/pages/historia.html">Historia</a>
+                            <a class="dropdown-item" href="./Local.html">Local</a>
+                            <a class="dropdown-item" href="./contactanos.html">Contacto</a>
+                            <a class="dropdown-item" href="./html/info.html">Historia</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -118,94 +123,60 @@
     
     
         
-    <div class="container-fluid container-fluid-custom">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/flasherH1915-744/1.png" class="d-block w-100" style="width: 100%; height: 600px;" alt="Primera Imagen">
+            <div class="container custom-container ">
+                <h1 class="text-center">Nuestra Historia y Objetivos</h1>
+                
+                <div class="row custom-margin-large">
+                  <div class="col-md-6">
+                    <!-- Foto angosta del equipo de trabajo -->
+                    <img src="../../img/marke/famili marke.png" class="img-fluid team-photo" alt="Foto del equipo de trabajo">
+                  </div>
+                  
+                  
+                  <div class="col-md-6">
+                    <!-- Contenido sobre la historia y objetivos -->
+                    <p>Bienvenidos a Abba Shoe, tu destino de calzado de alta calidad a precios accesibles. Fundada en abril de 2022, nuestra pasión por la moda y el calzado nos impulsó a abrir nuestras puertas al público un año después en la vibrante ciudad de Saenz Peña, Chaco.</p>
+                    <p>En Abba Shoe, nos enorgullece servir a la comunidad local tanto de manera virtual como cara a cara en nuestro acogedor local. Nuestra misión es sencilla pero poderosa: proporcionar a nuestros clientes una experiencia de compra excepcional, ofreciendo una amplia gama de calzados de alta calidad que no solo complementen su estilo, sino que también sean cómodos y duraderos.</p>
+                  </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./img/flasherH1915-744/2.png" class="d-block w-100" style="width: 100%; height: 600px;" alt="Segunda Imagen">
+                
+                <!-- Otros bloques de contenido -->
+                <!-- Puedes dividir el resto del contenido en diferentes secciones o columnas para darle más dinamismo -->
+                <!-- Por ejemplo, usando diferentes h2 y p según la sección -->
+              
+                <!-- Sección de nuestra colección -->
+                <div class="row   custom-margin-large">
+                  <div class="col-md-12">
+                    <h2>Nuestra Colección</h2>
+                    <p>Nuestro catálogo presenta una cuidadosa selección de calzados para satisfacer todas las ocasiones y gustos. Desde elegantes zapatos formales hasta cómodos sneakers y sandalias para el día a día, trabajamos incansablemente para brindarte las últimas tendencias en moda y calzado. La calidad es nuestra prioridad, y cada par de zapatos que vendemos cumple con los estándares más exigentes de durabilidad y comodidad.</p>
+                  </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./img/flasherH1915-744/3.png" class="d-block w-100" style="width: 100%; height: 600px;" alt="Tercera Imagen">
+              
+                
+                <div class="row  custom-margin-large">
+                  <div class="col-md-12">
+                    <h2>Atención al Cliente de Primera Clase</h2>
+                    <p>En Abba Shoe, valoramos a nuestros clientes y su satisfacción es nuestra máxima prioridad. Es por eso que ofrecemos un servicio de atención al cliente personalizado a través de WhatsApp, donde puedes obtener respuestas a tus preguntas y asistencia en tu proceso de compra. Creemos en la importancia de brindar un trato amable y cercano a cada persona que visita nuestra tienda, ya sea de manera virtual o en nuestro local.</p>
+                  </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./img/flasherH1915-744/4.png" class="d-block w-100" style="width: 100%; height: 600px;" alt="Tercera Imagen">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
-        </div>
-    </div>
-    
-    <section class="seccionPrincipal custom-container">
-        <div class="container py-">
-            <div class="row">
-                <div class="col mx-auto">
-                    <h1>ABBA SHOE</h1>
-                    <h2 >pensando en vos!</h2>
-                    <p>En ABBA SHOES, creemos que la elección de calzado va más
-                    allá de la moda y se convierte en una expresión de tu estilo
-                    personal. No solo es una declaración de elegancia, sino también un pilar 
-                    fundamental para tu comodidad y bienestar en tu día a día.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <div class="container custom-container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="./img/marke/fiest.jpeg" class="card-img-top rounded-circle" alt="Zapatos para fiestas">
-                    <div class="card-body">
-                        <h5 class="card-title">Fiestas Inolvidables</h5>
-                        <p class="card-text">Te acompañamos en tu búsqueda de los zapatos perfectos para fiestas. Explora nuestra gama de estilos que van desde zapatos elegantes hasta tacones de fiesta deslumbrantes.</p>
-                        <a href="#" >Ver más</a>
+                
+                <div class="row  custom-margin-large">
+                    
+                    <div class="col-md-6">
+                        <h2>Compra con Comodidad</h2>
+                        <p>Entendemos que tu tiempo es valioso, y es por eso que ofrecemos servicios de entrega a tu puerta. Simplemente elige tus productos favoritos, realiza tu pedido y nosotros nos encargaremos de llevar la moda directamente a tu hogar. Gracias por ser parte de la comunidad de Abba Shoe. Estamos comprometidos a seguir creciendo y mejorando para servirte mejor. ¡Esperamos verte pronto en nuestro local o atenderte en línea!</p>
+                    </div>
+                
+                    <div class="col-md-6">
+                        
+                        <img src="../../img/marke/NINIOSSS marke.jpg" class="img-fluid team-photo" alt="Foto del equipo de trabajo">
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="./img/marke/deport.jpeg" class="card-img-top " alt="Calzado deportivo">
-                    <div class="card-body card border-info mb-3">
-                        <h5 class="card-title">Tu Compañero de Entrenamiento</h5>
-                        <p class="card-text">Explora nuestra amplia gama de estilos que van desde zapatillas para correr hasta calzado específico para deportes en equipo.</p>
-                        <a href="#" ">Ver más</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="./img/marke/zapa niños.webp" class="card-img-top rounded-circle" alt="Calzado de verano">
-                    <div class="card-body">
-                        <h5 class="card-title">Verano en tus Pies</h5>
-                        <p class="card-text">Durante el verano, la elección de calzado es esencial para disfrutar al máximo de tus aventuras bajo el sol.</p>
-                        <a href="#" ">Ver más</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="./img/marke/acc.jpeg" class="card-img-top rounded-circle" alt="Accesorios">
-                    <div class="card-body">
-                        <h5 class="card-title">Accesorios</h5>
-                        <p class="card-text">¡Caminemos juntos en esta emocionante etapa de la vida!</p>
-                        <a href="#" ">Ver más</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            </div> 
+        
     
 
+    
 
         <!--Footer o pie de pagina-->
         <footer class="pie-pagina">
@@ -213,7 +184,7 @@
                 <div class="box">
                     <figure>
                         <a href="#" >
-                            <img src="./img/logos/LOGO-ABBA.jpeg" alt="Logo de Abba Shoe">
+                            <img src="../../img/logos/LOGO-ABBA.jpeg" alt="Logo de Abba Shoe">
                         </a>
                     </figure>
                 </div>
@@ -228,14 +199,14 @@
                     </div>
                 
 
-                <div class="box">
-                    <h3 class="titulo">SIGUENOS</h3>
-                    <div class="red-social">
-                        <a href="#"></a><img src="./img/favicon/tienda.png" class="icon" alt=""></a>
-                        <a href="#"></a><img src="./img/favicon/WPP.png" class="icon" alt=""></a>
-                        <a href="#"></a><img src="./img/favicon/ffaacee.png" class="icon" alt=""></a>
-                        <a href="#"></a><img src="./img/favicon/Insta.png" class="icon" alt=""></a>
-                    </div>
+                    <div class="box">
+                        <h3 class="titulo">SIGUENOS</h3>
+                        <div class="red-social">
+                            <a href="#"></a><img src="../../img/favicon/tienda.png" class="icon" alt=""></a>
+                            <a href="#"></a><img src="../../img/favicon/WPP.png" class="icon" alt=""></a>
+                            <a href="#"></a><img src="../../img/favicon/ffaacee.png" class="icon" alt=""></a>
+                            <a href="#"></a><img src="../../img/favicon/Insta.png" class="icon" alt=""></a>
+                        </div>
                     <div class="l">
                     <a href="">Direción: Barrio San Calletano</a>
                     <a href="#">WhatsApp +5493644</a> 
@@ -255,6 +226,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="./js/anuncio.js"></script>
+        <script src="../../js/anuncio.js"></script>
 </body>
 </html>
+
