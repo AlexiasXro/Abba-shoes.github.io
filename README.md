@@ -5,7 +5,7 @@ Bienvenido al repositorio de ABBA Shoe, una plataforma de comercio electrónico 
 
 Este repositorio contiene la implementación de un sitio web estático junto con una base de datos para gestión de usuarios y clientes, así como la "futura integración con Mercado Pago para pagos virtuales".
 
-- [Link](https://abbashoe.000webhostapp.com/)
+- [Sitio Web en Vivo](https://abbashoe.000webhostapp.com/)
 
 ## Documentación
 
