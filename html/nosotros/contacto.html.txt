@@ -1,5 +1,0 @@
-Carpeta "contacto": La carpeta "contacto" es una subcarpeta que puedes utilizar para organizar archivos relacionados específicamente con la página de contacto de tu sitio web. En esta carpeta podrías tener:
-
-"formulario.html": El archivo que contiene el formulario de contacto que los visitantes pueden completar.
-"mapa.html" o "mapa-de-ubicación.html": Páginas que muestran la ubicación de tu tienda en un mapa interactivo.
-"información-de-contacto.html": Página que brinda detalles de contacto, como dirección, números de teléfono y correo electrónico.

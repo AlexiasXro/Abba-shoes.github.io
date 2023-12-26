@@ -1,14 +1,29 @@
 /******carrusel*****/
+:root{
+    /*carro productos*/
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg--color: #fff0f0;
+    /*menu*/
+    --bgM-color:#343a40;
+    --bgM2-color:rgb(34, 38, 43);
+    --lu--color: #ffc10797;
+    --V-color: #fff0f0b5;
+    /*oferta*/
+    /*nosotros-pregunta ferecuente*/
+}
+
 *{
     padding: 0%;
     margin: 0%;
 }
 .section-carrusel {
-    background: #f4f4f4;
+    background:var(--bgM2-color);
     text-align: center;
     padding: 0%;
     top: 0;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0);
+    color: var(--V-color);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0);
     z-index: -1;
     position: relative;
 }

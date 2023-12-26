@@ -9,7 +9,19 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Tajawal', sans-serif;
 */
-
+:root{
+    /*carro productos*/
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg--color: #fff0f0;
+    /*menu*/
+    --bgM-color:#343a40;
+    --bgM2-color:rgb(39, 43, 48);
+    --lu--color: #ffc10797;
+    --V-color: #fff0f0;
+    /*oferta*/
+    /*nosotros-pregunta ferecuente*/
+}
 
 *{
     font-family: 'Poppins', sans-serif;

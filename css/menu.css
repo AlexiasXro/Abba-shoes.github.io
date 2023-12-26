@@ -1,87 +1,50 @@
 
 /*MENU*/
-
-
-
-nav .busqueda {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-
-}
-
-
-nav .busqueda input[type="text"] {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 5px;
-    width: 170px; /* Ancho del campo de búsqueda */
-}
-
-nav .busqueda button {
-    padding: 5px 10px;
-    background-color: rgba(23, 20, 39, 0.929);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    
-}
-
 /***************************/
 
-nav {
-    width: 100%;
-    height: auto;
-    position:relative;
-    margin: 0;
-    justify-content: space-between;
-    display: flex;
-    text-align: center;
-    /*justify-content: flex-start;*/
+:root{
+    /*carro productos*/
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg--color: #fff0f0;
+    /*menu*/
+    --bgM-color:#343a40;
+    --bgM2-color:rgb(39, 43, 48);
+    --lu--color: #ffc10797;
+    --V-color: #fff0f0;
+    /*oferta*/
+    /*nosotros-pregunta ferecuente*/
+}
+.custom-container {
+    padding-top: 80px; 
+    padding-bottom: 80px; 
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+
 }
 
-nav  ul {
-    list-style: none;/*sacar cualquier estilo por defecto*/
-    box-sizing: border-box;
-    flex-direction: column;
-    align-content: center;
-    
+
+.card {
+    transition: all 0.3s ease; /* cambios de estados en la animación del borde */
+    border: 2px solid transparent; 
+    border-radius: 8px;
+    padding: 10px;
 }
 
-nav  ul li ul {
-    display: none;
-    /*ocultamos el menu*/
-    position:relative;
-    top: 100%;
-    left:0;/**/
+/* animación del borde */
+@keyframes borderAnimation {
+    0% { border-color: #05050586; }
+    25% { border-color: #c5e56d; }
+    50% { border-color: rgb(212, 254, 133)}
+    75% { border-color: rgb(2, 2, 2); }
+    100% { border-color: #040404; }
 }
 
-nav  ul li:hover>ul {
-     /* Alinearlo a la izquierda del elemento padre */
-    display: block;
-    
-}
 
-nav  ul li ul li {
-    height: 40px;
-    width: 300px;
-    background-color: #171427cc;
-    text-align: start;
-    padding-left: 10px;
-    line-height: 2;
-    z-index: 2; /**/
-    
+.card:hover {
+    animation: borderAnimation 2s infinite; 
+    transform: scale(1.05);
 }
-
-nav  ul li ul li a {
-    text-decoration: none;
-    color: rgb(228, 228, 228);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-}
-
 
 
 .navbar {
@@ -99,44 +62,15 @@ nav  ul li ul li a {
     position: relative;
     z-index: 1; /* Asegura que el carrusel esté en un nivel inferior */
 }
-.dropdown-menu {
-    position: absolute;
-    z-index: 3; /* Asegura que el submenú esté en un nivel superior */
-}
-
-
-.navbar-nav .nav-link {
-    font-size: 20px; /* Tamaño de fuente más grande, ajusta este valor según tu preferencia */
-}
-/* Submenú estilo neón y fondo al pasar el cursor */
-.navbar .dropdown-menu {
-    background-color: #22262a; /* Color de fondo inicial */
-    
-}
-
-
-.navbar .dropdown-item {
-    color: #dedede; /* Color de texto negro */
-    font-size: 20px; /* Tamaño de fuente más grande */
-    text-shadow:2px 2px 4px c; /* Sombra de texto en verde */
-}
-
-.navbar .dropdown-item {
-    transition: background-color 0.3s ease; /* Agregar transición */
-}
-
-.navbar .dropdown-item:hover {
-    background-color: #00ffd96b; /* Color de fondo al pasar el cursor */
-    text-shadow: 2px 2px 4px rgb(26, 27, 27); /* Sombra al pasar el cursor */
-}
 
 .card {
     color: rgba(0, 0, 0, 0.5); /* Cambiar el color del texto a negro con transparencia */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregar sombra al texto */
     background-size: cover; /* Hacer que la imagen de fondo cubra completamente la tarjeta */
     background-position: center; /* Alinear la imagen de fondo al centro */
-    border: #00ffd96b 3px solid; /* Establecer un borde con color especificado */
+    border: var(--text-color) 3px solid; /* Establecer un borde con color especificado */
 }
+
 
 
 

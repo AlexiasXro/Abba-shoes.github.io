@@ -1,15 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/generalsub.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Caceres Romina">
+        <meta name="description" content="Zapatería Abba Shoe: Encuentra el calzado perfecto para hombres, mujeres y niños. Variedad de estilos y tallas.">
+        <meta name="keywords" content="zapatería, calzado, zapatos, botas, zapatillas, moda, calidad">
+        <meta name="robots" content="index, follow">
+        <title>Comprar es facil</title>
+        <!--CSS Personal-->
+        <link rel="stylesheet" href="../../css/newgeneral.css">
+        <link rel="stylesheet" href="../../css/">
+        <link rel="stylesheet" href="../../css/s-carrusel.css">
+        <link rel="stylesheet" href="../../css/menu.css">
+        <!--CDN booststrap link-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!---->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!--Armar carpeta css-->
+        <style>
+            .container-fluid-custom {
+                padding: 0;
+                margin: 0;
+            }
+            .custom-container {
+                padding-top: 80px; 
+                padding-bottom: 80px; 
+                margin-top: 50px; 
+                margin-bottom: 50px; 
+            }
+            .custom-bullet {
+            list-style: none;
+            counter-reset: step-counter;
+            padding-left: 0;
+            }
+            .custom-bullet li {
+                position: relative;
+                padding-left: 2em;
+                margin-bottom: 0.5em;
+                cursor: pointer;
+                transition: color 0.3s ease-in-out;
+            }
+            .custom-bullet li::before {
+                content: counter(step-counter);
+                counter-increment: step-counter;
+                display: inline-block;
+                width: 1.6em;
+                height: 1.6em;
+                border-radius: 50%;
+                background-color: #fd7e14; 
+                color: white;
+                text-align: center;
+                line-height: 1.6em;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transition: transform 0.3s ease-in-out;
+            }
+            .custom-bullet li:hover::before {
+                transform: scale(1.5);
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+            }
+            .custom-bullet li:hover {
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            }
+            
+            /* Estilos para los enlaces */
+            .enlace {
+                color: #fd7e14; 
+                text-decoration: none; 
+                transition: color 0.3s ease-in-out; 
+            }
+            .enlace:hover {
+                color: #fd7e14; 
+                text-decoration: underline; 
+            }
+        
 
-    <!--box Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>GuiaCompra</title>
-</head>
+        </style>
+
+    </head>
 <body>
     <div class="section-carrusel">
         <div class="text-carousel">
@@ -24,204 +94,159 @@
             </div>
         </div>
     </div>
-
-      <!--Menu-->
-      <nav>
-        <div >
-            <div class="Logo">
-                <a href="../index.html">
-                    <img src="../img/logos/logo.png" alt="">
-                </a>
-            </div>
-        </div>
-
-        <div class="contenedor">
-
-            <div class="menu" >
-                <ul>
-                    <li class="busqueda">
-                        <input type="text" id="busqueda" placeholder="Buscar...">
-                        <button id="btn-busqueda">Buscar</button>
+    
+    <!--MENU con boostrap-->
+    <div class="container-fluid container-fluid-custom">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-light">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../img/logos/LOGO-ABBA.jpeg" alt="Logo de Abba Shoe" width="80" height="80" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Registrarse
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="#">Crear cuenta</a>
+                            <a class="dropdown-item" href="#">Iniciar sesión</a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="">REGISTRATE</a>
-                        <ul>
-                            <li><a href="../html/crearcuenta.html">CREAR CUENTA</a></li>
-                            <li><a href="../html/loguear.html">INICIAR</a></li>
-                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Acerca de nosotros
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="./local.html">Local</a>
+                            <a class="dropdown-item" href="#">Contacto</a>
+                            <a class="dropdown-item" href="./html/info.html">Historia</a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#">ACERCA DE NOSOTROS</a>
-                        <ul>
-                            <li><a href="../html/mapa.html">LOCAL</a></li>
-                            <li><a href="../html/comunicate.html">CONTACTO</a></li>
-                            <li><a href="/ABBASHOE/html/info.html">HISTORIA</a></li>
-                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Preguntas Frecuentes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                            <a class="dropdown-item" href="./html/talle.html">Talle</a>
+                            <a class="dropdown-item" href="./html/Guia.html">Cómo comprar</a>
+                            <a class="dropdown-item" href="./html/InfoPagos.html">Métodos de pago</a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#">PREGUNTAS FRECUENTES</a>
-                        <ul>
-                            <li><a href="/ABBASHOE/html/talle.html">TALLE</a></li>
-                            <li><a href="/ABBASHOE/html/Guia.html">COMO COMPRAR</a></li>
-                            <li><a href="/ABBASHOE/html/InfoPagos.html">METODOS DE PAGO</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Carro de compras</a>
                     </li>
-                    <li>
-                        <a href="../html/listar.html">CARRO DE COMPRAS</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Favoritos</a>
                     </li>
-                    <li>
-                        <a href="../html/favoritos.html">FAVORITOS</a>
-                    </li>
-                    <li>
-                        <a href="../html/carro.html">CATALOGO</a>
-                        <ul>
-                            <li><a href="#">MUJERES</a></li>
-                            <li><a href="#">HOMBRES</a></li>
-                            <li><a href="#">NIÑOS</a></li>
-                            <li><a href="#">ZAPATILLAS</a></li>
-                            <li><a href="#">BOTAS</a></li>
-                            <li><a href="#">ZANDALIAS</a></li>
-                            <li><a href="#">ZAPATOS</a></li>
-
-                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Catálogo
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                            <a class="dropdown-item" href="#">Mujeres</a>
+                            <a class="dropdown-item" href="#">Hombres</a>
+                            <a class="dropdown-item" href="#">Niños</a>
+                            <a class="dropdown-item" href="#">Zapatillas</a>
+                            <a class="dropdown-item" href="#">Botas</a>
+                            <a class="dropdown-item" href="#">Sandalias</a>
+                            <a class="dropdown-item" href="#">Zapatos</a>
+                            <a class="dropdown-item" href="#">Accesorios</a>
+                        </div>
                     </li>
                 </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
             </div>
-        </div>
-    </nav>
-
-    <!--
-        <header>
-            <div class="nav container">
-                <a href="../index.html"class="logo">Abba Shoe</a>
-                
-                <div class="menusimple" >
-                    <ul>
-                        <li>
-                            <a href="index.html">Ofertas</a>
-                        </li>
-                        <li>
-                            <a href="../ABBASHOE/html/carro.html">Nuevo Ingreso</a>
-                        </li>
-                        <li>
-                            <a href="#">Catalogo</a>
-                        </li>
-                        <li>
-                            <a href="#">Envios</a>
-                        </li>
-                        <li>
-                            <a href="#">Carrito</a>
-                        </li>
-                        <li>
-                            <a href="#">Pagos</a>
-                        </li>
-                        <li>
-                            <a href="#">Ayuda</a>
-                        </li>
-                        <li>
-                            <a href="#">REGISTRATE</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </header>
-    -->
-    <div class="contenedor-con-imagen">
-        <div class="cont">
-            <h1>Guía para Comprar y Pagar Calzado en Línea</h1>
-                <br>
-                <br>
-            <h2>Paso 1: Acceder al Catálogo de Calzado</h2>
-            <p>Abre tu navegador y ve al sitio web de la tienda <a href="../index.html" class="enlace">Abba Shoe</a>.</p>
-            <p>Navega por las <a href="../html/carro.html" class="enlace">categorías</a> o utiliza la función de búsqueda para encontrar el tipo de calzado que te interesa.</p>
-            <br>
-            <h2>Paso 2: Seleccionar el Producto</h2>
-            <p>Haz clic en el producto de calzado que desees comprar para obtener más detalles.</p>
-            <p>En la página del producto, verifica la <a href="../html/talle.html" class="enlace">Talla</a> y el color disponibles, así como la descripción detallada y las imágenes.</p>
-            <br>
-            <h2>Paso 3: Agregar al Carrito</h2>
-            <p>Después de confirmar que has elegido el producto correcto, selecciona la talla y el color que deseas.</p>
-            <p>Haz clic en el botón "Agregar al Carrito" o un botón similar.</p>
-            <br>
-            <h2>Paso 4: Revisar el Carrito de Compras</h2>
-            <p>Dirígete a la sección <a href="../html/carro.html" class="enlace">"Mi Carrito"</a> o "Carrito de Compras" para revisar los productos que has seleccionado.</p>
-            <p>Asegúrate de que la talla y el color sean los correctos antes de proceder.</p>
-            <br>
-            <h2>Paso 5: Confirmar la Compra</h2>
-            <p>En el carrito de compras, verifica que los productos sean los que deseas adquirir y la cantidad deseada.</p>
-            <p>Una vez que estés seguro, haz clic en el botón <a href="../html/FormulariCliente.html" class="enlace">"Continuar con la Compra"</a> o "Proceder al Pago".</p>
-            <br>
-            <h2>Paso 6: Generar Factura y Pago</h2>
-            <p>Antes deveras <a href="../html/Registro.html" class="enlace">Registrarte</a> para coontinuar la compra</p>
-            <p>En esta etapa, deberás proporcionar tus datos personales, dirección de entrega y cualquier información necesaria para la facturación.</p>
-            <p>Elige el método de pago que prefieras, que puede incluir opciones como MercadoPago, transferencia bancaria o depósito a cuenta bancaria con tarjeta de débito.</p>
-            <br>
-            <h2>Paso 7: Confirmación de Pago</h2>
-            <p>Después de realizar el pago, recibirás una confirmación de tu compra en la pantalla, y tendrás la opción de generar una factura si aún no lo has hecho.</p>
-            <p>La factura y los detalles de tu compra se enviarán a tu WhatsApp o correo electrónico, según lo que hayas proporcionado durante el proceso de pago.</p>
-            <br>
-            <h2>Paso 8: Coordinar la Entrega</h2>
-            <p>Una vez que hayas confirmado el pago, recibirás un comprobante de pago en tu WhatsApp o correo electrónico.</p>
-            <p>En este momento, podrás coordinar la entrega con la vendedora. Puedes elegir entre retirar el calzado en la tienda física o solicitar envío a domicilio.</p>
-            <br>
-            <h2>Consejos adicionales:</h2>
-            <p>Asegúrate de que los detalles del producto, la talla y el color sean correctos antes de confirmar la compra.</p>
-            <p>Verifica la política de devoluciones de la tienda en caso de que necesites hacer un cambio o devolución.</p>
-            <p>Mantén un registro de tus comprobantes de pago y confirmación de compra para futuras referencias.</p>
-            <p><a href="#" class="enlace">Gracias por vicitarnos.</a></p>
-        </div>
+        </nav>
     </div>
-    
-    --Footer o pie de pagina--
-        <footer>
-            <div class="contenedor">
-                <div class="box25">
-                    <h3 class="titulo">Abierto</h3>>
-                    <p>Lunes a Miércoles de 07:30 a 10:30 hs</p>
-                    <p>Jueves 12:30 a 18:30 hs</p>
-                    <p>Viernes 14:30 a 20:30 hs</p>
-                    <p>Sábado 09:00 a 11:00 hs</p>
-                    <p class="cerrado">Domingo cerrado</p>
+
+    <!--contenido informativo compra - pago-->
+    <div class="container">
+        <div class="contenedor-con-imagen">
+            <div class="cont">
+                <h3 class="display-4">Guía para Comprar y Pagar Calzado en Línea</h3>
+                    <br>
+                    <ol class="custom-bullet">
+                        <li><p><strong>Paso 1: </strong>Acceder al Catálogo de Calzado<br>Abre tu navegador y ve al sitio web de la tienda <a href="#" class="enlace">Abba Shoe.</a>. Navega por las categorías o utiliza la función de búsqueda para encontrar el tipo de calzado que te interesa.</p></li>
+                        <li><p><strong>Paso 2: </strong>Seleccionar el Producto<br>Haz clic en el producto de calzado que desees comprar para obtener más detalles...</p></li>
+                        <li><p><strong>Paso 3: </strong>Agregar al Carrito<br>Después de confirmar que has elegido el producto correcto, selecciona la <a href="#" class="enlace">talla</a> y el color que deseas...</p></li>
+                        <li><p><strong>Paso 4: </strong>Revisar el Carrito de Compras<br>Dirígete a la sección <a href="#" class="enlace">"Mi Carrito"</a> o para revisar los productos que has seleccionado...</p></li>
+                        <li><p><strong>Paso 5: </strong>Confirmar la Compra<br>En el carrito de compras, verifica que los productos sean los que deseas adquirir y la cantidad deseada...</p></li>
+                        <li><p><strong>Paso 6: </strong>Generar Factura y Pago<br>Antes deberás <a href="#" class="enlace">registrarte</a> para continuar la compra. En esta etapa, proporciona tus datos personales, dirección de entrega y elige el método de pago...</p></li>
+                        <li><p><strong>Paso 7: </strong>Confirmación de Pago<br>Después de realizar el <a href="#" class="enlace">pago</a>, recibirás una confirmación de tu compra en la pantalla y se enviarán la factura y los detalles de tu compra a tu WhatsApp o correo electrónico...</p></li>
+                        <li><p><strong>Paso 8: </strong>Coordinar la Entrega<br>Una vez confirmado el pago, recibirás un comprobante de pago y podrás coordinar la entrega con la vendedora, ya sea retirando el calzado en la tienda o solicitando envío a domicilio...</p></li>
+                    </ol>
+                    <h4>Consejos adicionales:</h4>
+                <p>Asegúrate de que los detalles del producto, la talla y el color sean correctos antes de confirmar la compra.</p>
+                <p>Verifica la política de devoluciones de la tienda en caso de que necesites hacer un cambio o devolución.</p>
+                <p>Mantén un registro de tus comprobantes de pago y confirmación de compra para futuras referencias.</p>
+                <h3><a href="#" class="enlace"><strong>Gracias por vicitarnos.</strong></a></h3>
                 </div>
-
-                <div class="box50">
-                    !--insertar un mapa--
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14246.84415283175!2d-60.44498922703645!3d-26.78547948355722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94412d1e722da3c1%3A0xa92dd29dd24e5ca2!2sFausto%20RestoBar!5e0!3m2!1ses!2sar!4v1633540487354!5m2!1ses!2sar"
-                        width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-
-                <div class="box25">
-                    !--redes sociales y + info--
-                    <h3 class="titulo">Contacto</h3>
-                    <div class="contacto">
-                        <img src="imagenes/Iconos/ubicacion.png" alt="" class="icono">
-                        Bartolome Mitre, Sáenz Peña, Chaco
-                    </div>
-
-                    <div class="contacto">
-                        <img src="imagenes/Iconos/whatsapp.png" alt="" class="icono">
-                        +543644425138
-                    </div>
-
-
-                    <div class="redesSociales">
-                        !--<a href="#" target="_blank"><img src="imagenes/Iconos/facebook.png" alt=""></a>
-                        <a href="#" target="_blank"><img src="imagenes/Iconos/instagram.png" alt=""></a>
-                        <a href="#" target="_blank"><img src="imagenes/Iconos/twitter.png" alt=""></a>
-                        <a href="#" target="_blank"><img src="imagenes/Iconos/youtube.png" alt=""></a>--
-                        <i class='bx bxl-instagram' src="https://www.instagram.com/abba.shoe/" ></i>
-                        <i class='bx bxl-facebook-circle'src="#" >no tiene</i>
-                        <i class='bx bxl-whatsapp' src="https://wa.me/+5493644454650/?text=urlencodedtext donde" >mod</i>
-                        <i class='bx bxl-youtube' >no hay xd</i>
-                    </div>
-                </div>
-
-
             </div>
-        </footer>
-        <script src="../js/anuncio.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        </div>
+    
+    
+    
+    
+
+
+    <!--Footer o pie de pagina-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="../../index.html" >
+                        <img src="../../img/logos/LOGO-ABBA.jpeg" alt="Logo de Abba Shoe">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="box">
+                <h3 class="titulo">Horarios Abierto</h3>
+                <p>Lunes a Miércoles de 08:30 a 12:00 hs</p>
+                <p>Jueves 12:30 a 18:30 hs</p>
+                <p>Viernes 14:30 a 20:30 hs</p>
+                <p>Sábado 09:00 a 11:00 hs</p>
+                <p class="cerrado">Domingo cerrado</p>
+                </div>
+            
+
+            <div class="box">
+                <h3 class="titulo">SIGUENOS</h3>
+                <div class="red-social">
+                    <a href="#"></a><img src="../../img/favicon/tienda.png" class="icon" alt=""></a>
+                    <a href="#"></a><img src="../../img/favicon/WPP.png" class="icon" alt=""></a>
+                    <a href="#"></a><img src="../../img/favicon/ffaacee.png" class="icon" alt=""></a>
+                    <a href="#"></a><img src="../../img/favicon/Insta.png" class="icon" alt=""></a>
+                </div>
+                <div class="l">
+                <a href="">Direción: Barrio San Calletano</a>
+                <a href="#">WhatsApp +5493644</a> 
+                <a href="#">Nosotros</a>
+                <a href="#">Cómo comprar</a>
+                <a href="#">Preguntas Frecuentes</a>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="grupo-2">
+            <small>&copy;2023<b> KNDAlexias </b>- Todo los Derechos Reservados. </small>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    
+    <!--CDN bootstrap 5.3.2-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--JS personales-->
+    <script src="../../js/anuncio.js"></script>
+    <script src="../../js/main.js"></script>
 </body>
 </html>

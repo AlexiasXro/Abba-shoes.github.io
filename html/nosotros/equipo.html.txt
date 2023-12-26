@@ -1,1 +1,0 @@
-nosotros: En esta carpeta, puedes almacenar archivos relacionados con la información de tu empresa o tienda, como "acerca-de-nosotros.html" para la descripción de tu negocio y "equipo.html" para mostrar información sobre tu equipo o personal.

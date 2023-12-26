@@ -33,5 +33,15 @@ function cambiarImagen() {
     carrusel.style.transform = `translateX(-${slideIndex * 100}%)`;
 }
 
-  // Inicia la transición automática
-setInterval(cambiarImagen, transitionDuration);
+// Función para agregar y quitar la clase 'vibrar' cada 5 segundos
+function toggleVibration() {
+  var elemento = document.querySelector('.elemento');
+  elemento.classList.add('vibrar');
+
+  setTimeout(function() {
+      elemento.classList.remove('vibrar');
+  }, 600); // Duración de la animación en milisegundos
+}
+
+// Ejecutar la función cada 5 segundos
+setInterval(toggleVibration, 5000); // 5000 milisegundos = 5 segundos

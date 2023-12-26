@@ -1,0 +1,19 @@
+// Obtén el elemento de video
+var video = document.getElementById("miVideo");
+
+// Función para reiniciar la reproducción después de 2 minutos
+function reiniciarVideo() {
+    video.play();
+}
+
+// Agrega un evento "ended" que se ejecutará cuando el video termine
+video.addEventListener("ended", function() {
+    // Espera 2 minutos (en milisegundos) antes de volver a reproducir el video
+    setTimeout(reiniciarVideo, 120000); // 120000 milisegundos = 2 minutos
+});
+
+//BUSQUEDA
+document.getElementById("btn-busqueda").addEventListener("click", function() {
+    var query = document.getElementById("busqueda").value;
+    // Realiza aquí la acción de búsqueda con la variable 'query'
+  });
