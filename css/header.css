@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400; 500; 800&display=swap');
+
+:root {
+    --gradiente-color-1: #814C25; /* Primer color, por ejemplo, rojo */
+    --gradiente-color-2: #FFDE59; /* Segundo color, por ejemplo, verde */
+    --color-texto:#ddd2d2;
+    --color-fondo:#091220;
+    --color-body:#0D1A2D;
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+header {
+    background-color: #091220;
+    color: #ddd2d2;
+    /* padding: 12px 0;  altura*/
+   
+}
+
+.decoracion {
+    border-top: 5px solid transparent; /* Borde superior transparente para reservar espacio */
+    border-image: linear-gradient(to right, #814C25, #FFDE59); /* Degradado de izquierda a derecha con dos colores */
+    border-image-slice: 1; /* Ajuste para que el gradiente no se extienda al resto de los bordes */
+    height: 100px;/*altura del head*/
+}
+/*logo header NOSE COMO UBICARLO A LA IZQUIERDA*/
+
+.logo img {
+    width: 180px;
+    border: solid 2px rgb(95, 109, 135);
+}
+
+
+/*-*/
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Espacio entre elementos de la lista */
+    margin-right: 10px;
+    margin-left:0px;/*alejo el logo de catalogo*/
+    
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ddd2d2;
+    font-weight: bold;
+}
+
+
+header.search-container {
+    display: flex;
+    margin-left:30px;
+
+}
+
+.anuncio-H {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 60px; /* Ajusta la altura según sea necesario */
+    background-color: #d3d3d3; /* Fondo azul (#007bff) */
+    overflow: hidden;
+}
+
+.texto-anuncio0,
+.texto-anuncio1,
+.texto-anuncio2,
+.texto-anuncio3,
+.texto-anuncio4 {
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.texto-anuncio0 i,
+.texto-anuncio1 i,
+.texto-anuncio2 i,
+.texto-anuncio3 i,
+.texto-anuncio4 i {
+    font-size: 16px; /* Tamaño de los iconos, ajusta según sea necesario */
+}
+
+.texto-anuncio0 p,
+.texto-anuncio1 p,
+.texto-anuncio2 p,
+.texto-anuncio3 p,
+.texto-anuncio4 p {
+    font-size: 12px; /* Tamaño del texto 12px */
+    margin-bottom: 0; /* Elimina el espacio por defecto debajo del párrafo */
+    margin-left: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.texto-anuncio0 {
+    animation-delay: 0s; /* Sin retraso para el primer conjunto */
+}
+
+.texto-anuncio1 {
+    animation-delay: 5s; /* Retraso de 5 segundos para el segundo conjunto */
+}
+
+.texto-anuncio2 {
+    animation-delay: 10s; /* Retraso de 10 segundos para el tercer conjunto */
+}
+
+.texto-anuncio3 {
+    animation-delay: 15s; /* Retraso de 15 segundos para el cuarto conjunto */
+}
+
+.texto-anuncio4 {
+    animation-delay: 20s; /* Retraso de 20 segundos para el quinto conjunto */
+}
+
+@keyframes cambiarTexto {
+    0%, 19% {
+        opacity: 0;
+    }
+    20%, 39% {
+        opacity: 1;
+    }
+    40%, 100% {
+        opacity: 0;
+    }
+}
