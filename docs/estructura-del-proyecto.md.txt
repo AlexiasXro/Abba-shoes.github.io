@@ -1,0 +1,183 @@
+proyecto-web/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── assets/
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── banner.jpg
+│   │   └── ...
+│   │
+│   ├── fonts/
+│   │   ├── roboto.woff
+│   │   ├── opensans.woff
+│   │   └── ...
+│   │
+│   └── icons/
+│       ├── facebook.svg
+│       ├── twitter.svg
+│       └── ...
+│
+├── pages/
+│   ├── about.html
+│   ├── contact.html
+│   └── ...
+│
+├── components/
+│   ├── header.html
+│   ├── footer.html
+│   ├── carousel.html
+│   └── ...
+│
+├── libraries/
+│   ├── jquery.min.js
+│   ├── bootstrap.min.css
+│   └── ...
+│
+├── data/
+│   ├── products.json
+│   ├── users.json
+│   └── ...
+│
+├── README.md
+└── package.json
+
+Carpeta principal (Root):
+
+index.html: Página principal del sitio web.
+style.css: Archivo CSS para estilizar la página.
+script.js: Archivo JavaScript para funcionalidades interactivas.
+Carpeta de Imágenes:
+
+Almacena todas las imágenes utilizadas en el sitio web.
+Carpeta de Estilos (CSS):
+
+style.css: Hoja de estilos principal.
+Otros archivos CSS adicionales según sea necesario para diferentes páginas o componentes.
+Carpeta de Scripts (JavaScript):
+
+script.js: Archivo JavaScript principal.
+Otros archivos JavaScript para funcionalidades específicas si es necesario.
+Carpeta de Recursos:
+
+Almacena cualquier otro recurso necesario, como fuentes personalizadas, iconos, etc.
+Carpeta de Páginas (opcional):
+
+Si el sitio web tiene varias páginas, puedes organizarlas en esta carpeta.
+Carpeta de Componentes (opcional):
+
+Si estás utilizando un marco de trabajo como React, Vue.js, o Angular, puedes organizar componentes reutilizables aquí.
+Carpeta de Librerías/Frameworks (opcional):
+
+Si estás utilizando bibliotecas o marcos de trabajo externos, puedes almacenarlos aquí.
+Archivos de Configuración:
+
+README.md: Documentación del proyecto.
+Archivos de configuración adicionales, como package.json para proyectos de Node.js, webpack.config.js para configuración de empaquetado, etc.
+Archivos de Datos (opcional):
+
+Si el sitio web necesita datos estáticos (por ejemplo, JSON, XML), puedes almacenarlos aquí.Carpeta principal (Root):
+
+index.html: Página principal del sitio web.
+style.css: Archivo CSS para estilizar la página.
+script.js: Archivo JavaScript para funcionalidades interactivas.
+Carpeta de Imágenes:
+
+Almacena todas las imágenes utilizadas en el sitio web.
+Carpeta de Estilos (CSS):
+
+style.css: Hoja de estilos principal.
+Otros archivos CSS adicionales según sea necesario para diferentes páginas o componentes.
+Carpeta de Scripts (JavaScript):
+
+script.js: Archivo JavaScript principal.
+Otros archivos JavaScript para funcionalidades específicas si es necesario.
+Carpeta de Recursos:
+
+Almacena cualquier otro recurso necesario, como fuentes personalizadas, iconos, etc.
+Carpeta de Páginas (opcional):
+
+Si el sitio web tiene varias páginas, puedes organizarlas en esta carpeta.
+Carpeta de Componentes (opcional):
+
+Si estás utilizando un marco de trabajo como React, Vue.js, o Angular, puedes organizar componentes reutilizables aquí.
+Carpeta de Librerías/Frameworks (opcional):
+
+Si estás utilizando bibliotecas o marcos de trabajo externos, puedes almacenarlos aquí.
+Archivos de Configuración:
+
+README.md: Documentación del proyecto.
+Archivos de configuración adicionales, como package.json para proyectos de Node.js, webpack.config.js para configuración de empaquetado, etc.
+Archivos de Datos (opcional):
+
+Si el sitio web necesita datos estáticos (por ejemplo, JSON, XML), puedes almacenarlos aquí.Carpeta principal (Root):
+
+index.html: Página principal del sitio web.
+style.css: Archivo CSS para estilizar la página.
+script.js: Archivo JavaScript para funcionalidades interactivas.
+Carpeta de Imágenes:
+
+Almacena todas las imágenes utilizadas en el sitio web.
+Carpeta de Estilos (CSS):
+
+style.css: Hoja de estilos principal.
+Otros archivos CSS adicionales según sea necesario para diferentes páginas o componentes.
+Carpeta de Scripts (JavaScript):
+
+script.js: Archivo JavaScript principal.
+Otros archivos JavaScript para funcionalidades específicas si es necesario.
+Carpeta de Recursos:
+
+Almacena cualquier otro recurso necesario, como fuentes personalizadas, iconos, etc.
+Carpeta de Páginas (opcional):
+
+Si el sitio web tiene varias páginas, puedes organizarlas en esta carpeta.
+Carpeta de Componentes (opcional):
+
+Si estás utilizando un marco de trabajo como React, Vue.js, o Angular, puedes organizar componentes reutilizables aquí.
+Carpeta de Librerías/Frameworks (opcional):
+
+Si estás utilizando bibliotecas o marcos de trabajo externos, puedes almacenarlos aquí.
+Archivos de Configuración:
+
+README.md: Documentación del proyecto.
+Archivos de configuración adicionales, como package.json para proyectos de Node.js, webpack.config.js para configuración de empaquetado, etc.
+Archivos de Datos (opcional):
+
+Si el sitio web necesita datos estáticos (por ejemplo, JSON, XML), puedes almacenarlos aquí.Carpeta principal (Root):
+
+index.html: Página principal del sitio web.
+style.css: Archivo CSS para estilizar la página.
+script.js: Archivo JavaScript para funcionalidades interactivas.
+Carpeta de Imágenes:
+
+Almacena todas las imágenes utilizadas en el sitio web.
+Carpeta de Estilos (CSS):
+
+style.css: Hoja de estilos principal.
+Otros archivos CSS adicionales según sea necesario para diferentes páginas o componentes.
+Carpeta de Scripts (JavaScript):
+
+script.js: Archivo JavaScript principal.
+Otros archivos JavaScript para funcionalidades específicas si es necesario.
+Carpeta de Recursos:
+
+Almacena cualquier otro recurso necesario, como fuentes personalizadas, iconos, etc.
+Carpeta de Páginas (opcional):
+
+Si el sitio web tiene varias páginas, puedes organizarlas en esta carpeta.
+Carpeta de Componentes (opcional):
+
+Si estás utilizando un marco de trabajo como React, Vue.js, o Angular, puedes organizar componentes reutilizables aquí.
+Carpeta de Librerías/Frameworks (opcional):
+
+Si estás utilizando bibliotecas o marcos de trabajo externos, puedes almacenarlos aquí.
+Archivos de Configuración:
+
+README.md: Documentación del proyecto.
+Archivos de configuración adicionales, como package.json para proyectos de Node.js, webpack.config.js para configuración de empaquetado, etc.
+Archivos de Datos (opcional):
+
+Si el sitio web necesita datos estáticos (por ejemplo, JSON, XML), puedes almacenarlos aquí.

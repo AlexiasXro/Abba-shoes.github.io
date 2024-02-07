@@ -1,0 +1,37 @@
+# Flujo de Usuario - Sitio Web de Comercio Electrónico
+
+## 1. Inicio
+- El usuario llega a la página de inicio del sitio web.
+
+## 2. Exploración de productos
+- El usuario navega por las diferentes categorías de productos o utiliza la barra de búsqueda para encontrar un producto específico.
+
+## 3. Visualización del producto
+- El usuario hace clic en un producto para obtener más información.
+- Se muestra la página del producto con detalles como descripción, precio, imágenes y reseñas.
+
+## 4. Agregar al carrito
+- Si el usuario decide comprar el producto, puede agregarlo al carrito de compras.
+
+## 5. Revisión del carrito
+- El usuario accede al carrito de compras para revisar los productos seleccionados.
+- Puede modificar la cantidad de productos, eliminar productos o aplicar códigos de descuento si los hay.
+
+## 6. Inicio de sesión o registro (opcional)
+- Si el usuario aún no ha iniciado sesión, puede hacerlo en esta etapa.
+- Si es un nuevo usuario, puede registrarse para crear una cuenta.
+
+## 7. Información de envío y pago
+- El usuario proporciona la dirección de envío y selecciona el método de pago.
+- Si ya tiene una dirección guardada o una tarjeta de crédito asociada a su cuenta, puede seleccionarla.
+
+## 8. Confirmación del pedido
+- Antes de realizar el pedido, el usuario revisa todos los detalles, incluyendo la dirección de envío, método de pago y costo total.
+- Puede realizar cambios si es necesario.
+
+## 9. Realizar pedido
+- El usuario completa la transacción haciendo clic en el botón de "Realizar pedido".
+
+## 10. Confirmación de compra
+- Se muestra una página de confirmación de compra que incluye un número de pedido y detalles del pedido.
+- El usuario recibe un correo electrónico de confirmación con la información del pedido.
