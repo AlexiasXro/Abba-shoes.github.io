@@ -3,7 +3,7 @@
 
 Bienvenido al repositorio de ABBA Shoe, una plataforma de comercio electrónico de calzados y accesorios.
 
--La tienda virtual fue realizada usando para las vistas Bootstrap.
+-La tienda virtual fue realizada usando Bootstrap para las vistas .
 
 -Cuenta con registro de usuarios y un administrador, el cual debe registrarse con el correo: (  ---), para poder acceder a todas las funciones de admin.
 
