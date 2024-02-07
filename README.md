@@ -3,7 +3,17 @@
 
 Bienvenido al repositorio de ABBA Shoe, una plataforma de comercio electrónico de calzados y accesorios.
 
-Este repositorio contiene la implementación de un sitio web estático junto con una base de datos para gestión de usuarios y clientes, así como la "futura integración con Mercado Pago para pagos virtuales".
+-La tienda virtual fue realizada usando Bootstrap para las vistas .
+
+-Cuenta con registro de usuarios y un administrador, el cual debe registrarse con el correo: (  ---), para poder acceder a todas las funciones de admin.
+
+-La tienda (para usuarios normales) tiene las siguientes secciones:
+
+-index, donde se muestran todos los productos registrados y paginados -Búsqueda por categorías de productos -Vista específica de cada producto -Agregar productos al carrito de compra -Vista del carrito para modificación o eliminación de productos -Uso de Mercado pago para el pago de productos (todavía no esta activo) -Vista de perfil de usuario con Órdenes de compras hechas (si el usuario las tiene)
+
+Para el usuario admin:
+
+-Panel administrativo para agregar productos -Panel para modificar o eliminar productos
 
 - [Sitio Web en Vivo](https://abbashoe.000webhostapp.com/)
 
