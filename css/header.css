@@ -66,71 +66,9 @@ header.search-container {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 60px; /* Ajusta la altura según sea necesario */
-    background-color: #d3d3d3; /* Fondo azul (#007bff) */
+    height: 30px; 
+    color: #ddd2d2;
+    background-color:#141354;
     overflow: hidden;
 }
 
-.texto-anuncio0,
-.texto-anuncio1,
-.texto-anuncio2,
-.texto-anuncio3,
-.texto-anuncio4 {
-    text-align: center;
-    white-space: nowrap;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-}
-
-.texto-anuncio0 i,
-.texto-anuncio1 i,
-.texto-anuncio2 i,
-.texto-anuncio3 i,
-.texto-anuncio4 i {
-    font-size: 16px; /* Tamaño de los iconos, ajusta según sea necesario */
-}
-
-.texto-anuncio0 p,
-.texto-anuncio1 p,
-.texto-anuncio2 p,
-.texto-anuncio3 p,
-.texto-anuncio4 p {
-    font-size: 12px; /* Tamaño del texto 12px */
-    margin-bottom: 0; /* Elimina el espacio por defecto debajo del párrafo */
-    margin-left: 5px; /* Espacio entre el ícono y el texto */
-}
-
-.texto-anuncio0 {
-    animation-delay: 0s; /* Sin retraso para el primer conjunto */
-}
-
-.texto-anuncio1 {
-    animation-delay: 5s; /* Retraso de 5 segundos para el segundo conjunto */
-}
-
-.texto-anuncio2 {
-    animation-delay: 10s; /* Retraso de 10 segundos para el tercer conjunto */
-}
-
-.texto-anuncio3 {
-    animation-delay: 15s; /* Retraso de 15 segundos para el cuarto conjunto */
-}
-
-.texto-anuncio4 {
-    animation-delay: 20s; /* Retraso de 20 segundos para el quinto conjunto */
-}
-
-@keyframes cambiarTexto {
-    0%, 19% {
-        opacity: 0;
-    }
-    20%, 39% {
-        opacity: 1;
-    }
-    40%, 100% {
-        opacity: 0;
-    }
-}

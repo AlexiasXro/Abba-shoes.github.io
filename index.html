@@ -13,41 +13,44 @@
         <meta name="robots" content="index, follow">
         <title>AbbaShoe</title>
         <!--icono bx y Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <!--STLYLE CSS-->
         <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/carrusel-Index.css">
+        <link rel="stylesheet" href="./css/footer.css">
+
     </head>
 
-<body >
+<body>
     <!--carrusel metodos de pagos-->
-    <div class="">
+    <div class="anuncio-container">
         <div class="anuncio-H">
-            <div class="texto-anuncio0 ">
+            <div class="texto-anuncio0">
                 <i class="bi bi-cash"></i>
-                <p>Mercado Pago</p>
+                <p id="anuncio0">Mercado Pago</p>
             </div>
-            <div class="texto-anuncio1 ">
+            <div class="texto-anuncio1">
                 <i class="bi bi-arrow-right"></i>
-                <p>Transferencias</p>
+                <p id="anuncio1">Transferencias</p>
             </div>
-            <div class="texto-anuncio2 ">
+            <div class="texto-anuncio2">
                 <i class="bi bi-currency-dollar"></i>
-                <p>Descuentos en Efectivo</p>
+                <p id="anuncio2">Descuentos en Efectivo</p>
             </div>
-            <div class="texto-anuncio3 ">
+            <div class="texto-anuncio3">
                 <i class="bi bi-percent"></i>
-                <p>Descuentos en...</p>
+                <p id="anuncio3">Descuentos en...</p>
             </div>
-            <div class="texto-anuncio4 ">
+            <div class="texto-anuncio4">
                 <i class="bi bi-basket"></i>
-                <p>Sale....</p>
+                <p id="anuncio4">Sale....</p>
             </div>
         </div>
     </div>
-    
-    
+    <!--carrusel metodos de pagos-->
 
     <!--MENU con boostrap-->
 
@@ -86,142 +89,147 @@
         </div>
 
     </header>
+    <!--MENU con boostrap-->
 
-    <!--carusel-->
-    <div class="carousel-container">
-        <div id="myCarousel" class="carousel">
-            <div class="carousel-inner ">
-                <div class="carousel-item active">
-                    <img src="./img/flasherH1915-744/pag2.png" alt="Primera Imagen">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/flasherH1915-744/pag3.png" alt="Segunda Imagen">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/flasherH1915-744/pag2.png" alt="Tercera Imagen">
-                </div>
+    <!--carusel 3 imagenes-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/flasherH1915-744/pag3.png" class="d-block img-fluid" style="height: 700px;" alt="...">
             </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">&lt;</a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">&gt;</a>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/flasherH1915-744/pag2.png" class="d-block img-fluid" style="height: 700px;" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/flasherH1915-744/pag2.png" class="d-block img-fluid" style="height: 700px;" alt="...">
+            </div>
         </div>
     </div>
+    <!--carusel 3 imagenes-->
 
-    <!--tarjetas categoria-->
-    <section class="seccionPrincipal custom-container">
-        <div class="container py-">
+    <!--////////////////-->
+
+    <main>
+
+        <button class="boton-gigante">Haz clic aquí</button>
+
+        <!--tarjetas categoria-->
+        <section class="seccionPrincipal custom-container">
+            <div class="container py-">
+                <div class="row">
+                    <div class="col mx-auto">
+                        <h1>ABBA SHOE</h1>
+                        <h2>pensando en vos!</h2>
+                        <p>En ABBA SHOES, creemos que la elección de calzado va más
+                            allá de la moda y se convierte en una expresión de tu estilo
+                            personal. No solo es una declaración de elegancia, sino también un pilar
+                            fundamental para tu comodidad y bienestar en tu día a día.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container custom-container">
             <div class="row">
-                <div class="col mx-auto">
-                    <h1>ABBA SHOE</h1>
-                    <h2>pensando en vos!</h2>
-                    <p>En ABBA SHOES, creemos que la elección de calzado va más
-                        allá de la moda y se convierte en una expresión de tu estilo
-                        personal. No solo es una declaración de elegancia, sino también un pilar
-                        fundamental para tu comodidad y bienestar en tu día a día.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="container custom-container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="./img/marke/fiest.jpeg" class="card-img-top r" alt="Zapatos para fiestas">
-                    <div class="card-body">
-                        <h5 class="card-title">Fiestas Inolvidables</h5>
-                        <p class="card-text">Te acompañamos en tu búsqueda de los zapatos perfectos para
-                            fiestas. Explora nuestra gama de estilos que van desde zapatos elegantes hasta
-                            tacones de fiesta deslumbrantes.</p>
-                        <a href="#">Ver más</a>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./img/marke/fiest.jpeg" class="card-img-top r" alt="Zapatos para fiestas">
+                        <div class="card-body">
+                            <h5 class="card-title">Fiestas Inolvidables</h5>
+                            <p class="card-text">Te acompañamos en tu búsqueda de los zapatos perfectos para
+                                fiestas. Explora nuestra gama de estilos que van desde zapatos elegantes hasta
+                                tacones de fiesta deslumbrantes.</p>
+                            <a href="#">Ver más</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="./img/marke/deport.jpeg" class="card-img-top " alt="Calzado deportivo">
-                    <div class="card-body ">
-                        <h5 class="card-title">Tu Compañero de Entrenamiento</h5>
-                        <p class="card-text">Explora nuestra amplia gama de estilos que van desde zapatillas
-                            para correr hasta calzado específico para deportes en equipo.</p>
-                        <a href="#">Ver más</a>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./img/marke/deport.jpeg" class="card-img-top " alt="Calzado deportivo">
+                        <div class="card-body ">
+                            <h5 class="card-title">Tu Compañero de Entrenamiento</h5>
+                            <p class="card-text">Explora nuestra amplia gama de estilos que van desde zapatillas
+                                para correr hasta calzado específico para deportes en equipo.</p>
+                            <a href="#">Ver más</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="./img/marke/zapa niños.webp" class="card-img-top " alt="Calzado de verano">
-                    <div class="card-body">
-                        <h5 class="card-title">Verano en tus Pies</h5>
-                        <p class="card-text">Durante el verano, la elección de calzado es esencial para
-                            disfrutar al máximo de tus aventuras bajo el sol.</p>
-                        <a href="#">Ver más</a>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./img/marke/zapa niños.webp" class="card-img-top " alt="Calzado de verano">
+                        <div class="card-body">
+                            <h5 class="card-title">Verano en tus Pies</h5>
+                            <p class="card-text">Durante el verano, la elección de calzado es esencial para
+                                disfrutar al máximo de tus aventuras bajo el sol.</p>
+                            <a href="#">Ver más</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="./img/marke/acc.jpeg" class="card-img-top " alt="Accesorios">
-                    <div class="card-body">
-                        <h5 class="card-title">Accesorios</h5>
-                        <p class="card-text">¡Caminemos juntos en esta emocionante etapa de la vida!</p>
-                        <a href="#">Ver más</a>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./img/marke/acc.jpeg" class="card-img-top " alt="Accesorios">
+                        <div class="card-body">
+                            <h5 class="card-title">Accesorios</h5>
+                            <p class="card-text">¡Caminemos juntos en esta emocionante etapa de la vida!</p>
+                            <a href="#">Ver más</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
 
+    <!--footer-->
+    <footer class="  text-left text-secondary mt-auto ">
+        <div class="decoracionfooter pie-pagina">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <figure>
+                            <a href="./index.html">
+                                <img src="./img/logos/LOGO-ABBA.jpeg" alt="Logo de Abba Shoe" width="200px"
+                                    class="img-fluid">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-secondary">Email</a></li>
+                            <li><a href="#" class="text-secondary">Teléfono</a></li>
+                            <li><a href="#" class="redes-sociales"><img src="instagram.png" alt="Instagram"></a></li>
+                            <li><a href="#" class="redes-sociales"><img src="facebook.png" alt="Facebook"></a></li>
+                            <li><a href="#" class="redes-sociales"><img src="whatsapp.png" alt="WhatsApp"></a></li>
 
-    <!--Footer o pie de pagina-->
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <a href="./index.html">
-                        <img src="./img/logos/LOGO-ABBA.jpeg" alt="Logo de Abba Shoe">
-                    </a>
-                </figure>
-            </div>
-
-            <div class="box">
-                <h3 class="titulo">Horarios Abierto</h3>
-                <p>Lunes a Miércoles de 08:30 a 12:00 hs</p>
-                <p>Jueves 12:30 a 18:30 hs</p>
-                <p>Viernes 14:30 a 20:30 hs</p>
-                <p>Sábado 09:00 a 11:00 hs</p>
-                <p class="elemento cerrado">Domingo cerrado</p>
-            </div>
-
-
-            <div class="box">
-                <h3 class="titulo">SIGUENOS</h3>
-                <div class="red-social">
-                    <a href="#"></a><img src="./img/favicon/tienda.png" class="icon" alt=""></a>
-                    <a href="#"></a><img src="./img/favicon/WPP.png" class="icon" alt=""></a>
-                    <a href="#"></a><img src="./img/favicon/ffaacee.png" class="icon" alt=""></a>
-                    <a href="#"></a><img src="./img/favicon/Insta.png" class="icon" alt=""></a>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Horarios Abierto</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-secondary">Lunes a Miércoles de 08:30 a 12:00 hs</a></li>
+                            <li><a href="#" class="text-secondary">Jueves 12:30 a 18:30 hs</a></li>
+                            <li><a href="#" class="text-secondary">Viernes 14:30 a 20:30 hs</a></li>
+                            <li><a href="#" class="text-secondary">Sábado 09:00 a 11:00 hs</a></li>
+                            <li><a href="#" class="text-secondary">Domingo cerrado</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="l">
-                    <a href="">Direción: Barrio San Calletano</a>
-                    <a href="#">WhatsApp +5493644</a>
-                    <a href="#">Nosotros</a>
-                    <a href="#">Cómo comprar</a>
-                    <a href="#">Preguntas Frecuentes</a>
+                <div class="col-md-20">
+                    <hr>
+                    <p class="text-secondary">Derechos Reservados © 2024 KNDAlexias</p>
                 </div>
-
             </div>
-        </div>
-
-        <div class="grupo-2">
-            <small>&copy;2023<b> KNDAlexias </b>- Todo los Derechos Reservados. </small>
         </div>
     </footer>
+
     <!--js boostrap-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
+    <!--js lieso-->
+    <script src="/js/anuncio.js"></script>
 
 </body>
 
