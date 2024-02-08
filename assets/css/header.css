@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400; 500; 800&display=swap');
+/*font-family: 'Kumbh Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Tajawal:wght@500;900&display=swap');
+/*font-family: 'Josefin Sans', sans-serif;
+font-family: 'Tajawal', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:wght@400;500;600;800&display=swap');
+/*font-family: 'DM Serif Display', serif;
+font-family: 'Open Sans', sans-serif;
+3 TARJETAS PRODUCTO ALEGRE*/
+
+
+
+:root {
+    --gradiente-color-1: #814C25; /* Primer */
+    --gradiente-color-2: #FFDE59; /* Segundo */
+    --color-texto:#ddd2d2;
+    --color-fondo:#091220;
+    --color-body:#0D1A2D;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #091220;
+
+}
+
+.decoracion {
+    border-top: 5px solid transparent; /* Borde superior transparente para reservar espacio */
+    border-image: linear-gradient(to right, #814C25, #FFDE59); /* Degradado de izquierda a derecha con dos colores */
+    border-image-slice: 1; /* Ajuste para que el gradiente no se extienda al resto de los bordes */
+    height: 100px;/*altura del head*/
+}
+/*logo header NOSE COMO UBICARLO A LA IZQUIERDA*/
+
+.logo img {
+    width: 180px;
+    border: solid 2px rgb(189, 210, 97);
+}
+
+
+/*-*/
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Espacio entre elementos de la lista */
+    margin-right: 10px;
+    margin-left:0px;/*alejo el logo de catalogo*/
+    align-items: center;
+}
+.navbar {
+    background-color: #091220; /* Color de fondo */
+    z-index: 2;
+}
+
+/* Estilo para el botón de la hamburguesa */
+.navbar-toggler {
+    border-color: white; /* Color del borde del botón de la hamburguesa */
+}
+.navbar-nav .nav-link{
+    text-decoration: none;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #ddd2d2;
+    font-weight: bold;
+}
+
+
+header.search-container {
+    display: flex;
+    margin-left:30px;
+
+}
+
+.secondary-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa; /* Cambia el color de fondo según tus preferencias */
+    padding: 10px 20px; /* Ajusta el espaciado según sea necesario */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Añade sombra según sea necesario */
+}
+/*Cart*/
+
+#cart-icon {
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+    color: red;
+    
+}
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--bg--color);
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+    
+}
+
+.cart.active{
+    right: 0;
+}
+
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    
+}
+.secondary-nav .icons {
+    display: flex;
+    align-items: center;
+}
+
+.secondary-nav .icons i {
+    font-size: 24px;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-right: 10px; /* Ajusta el espaciado entre iconos según sea necesario */
+}
+
+.secondary-nav .links a {
+    margin-left: 20px; /* Ajusta el espaciado entre enlaces según sea necesario */
+    text-decoration: none;
+    color: #333; /* Cambia el color del texto según tus preferencias */
+}
+
+.secondary-nav .links a:hover {
+    text-decoration: underline; /* Efecto de subrayado al pasar el cursor */
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400; 500; 800&display=swap');
+
+:root {
+    --gradiente-color-1: #814C25; /* Primer color, por ejemplo, rojo */
+    --gradiente-color-2: #FFDE59; /* Segundo color, por ejemplo, verde */
+    --color-texto:#ddd2d2;
+    --color-fondo:#091220;
+    --color-body:#0D1A2D;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+header {
+    background-color: #091220;
+
+}
+
+
+
+.decoracion {
+    border-top: 5px solid transparent; /* Borde superior transparente para reservar espacio */
+    border-image: linear-gradient(to right, #814C25, #FFDE59); /* Degradado de izquierda a derecha con dos colores */
+    border-image-slice: 1; /* Ajuste para que el gradiente no se extienda al resto de los bordes */
+    height: 100px;/*altura del head*/
+}
+/*logo header NOSE COMO UBICARLO A LA IZQUIERDA*/
+
+.logo img {
+    width: 180px;
+    border: solid 2px rgb(95, 135, 127);
+}
+
+
+/*-*/
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Espacio entre elementos de la lista */
+    margin-right: 10px;
+    margin-left:0px;/*alejo el logo de catalogo*/
+    
+}
+.navbar {
+    background-color: #091220; /* Color de fondo */
+    z-index: 2;
+}
+
+/* Estilo para el botón de la hamburguesa */
+.navbar-toggler {
+    border-color: white; /* Color del borde del botón de la hamburguesa */
+}
+.navbar-nav .nav-link{
+    text-decoration: none;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #ddd2d2;
+    font-weight: bold;
+}
+
+
+header.search-container {
+    display: flex;
+    margin-left:30px;
+
+}
+
+.anuncio-H {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 30px; 
+    color: #ddd2d2;
+    background-color:#141354;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    z-index: 1; /* Mayor que el menú */
+}
+
+.espacio{
+    background-image: linear-gradient(to bottom, #091220, #0D1A2D); /* Degradado de arriba a abajo con dos colores */
+    height: 100px;
+}
+
+
+
+
+
+/*boton espacial ponele*/
+.cont-btn {
+    
+    width: 100%; /* Ancho del contenedor */
+    text-align: center; /* Alinear los botones al centro horizontal */
+    
+}
+
+.skewed {
+    position: relative;
+    width: 500px; /* Ancho del botón */
+    height: 100px; /* Altura del botón */
+    margin-right: 100px;
+    background-color: #0c396a; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: 4px solid transparent; /* Borde transparente para reservar espacio */
+    border-image: linear-gradient(to right, #814C25,#FFDE59 ); /* Degradado de izquierda a derecha con dos colores */
+    border-image-slice: 1; /* Ajuste para que el gradiente no se extienda */
+    border-radius: 2px; /* Borde redondeado */
+    transform: skew(-20deg); /* Deformación de 20 grados */
+    display: inline-block; /* Para colocar los botones en línea */
+    text-align: center; /* Alineación del texto */
+    line-height: 50px; /* Alineación vertical del texto */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    transition: all 0.3s ease; /* Transición suave de los cambios */
+}
+
+.skewed:hover {
+    transform: skew(-20deg) scale(1.1); /* Al pasar el ratón, agrandar el botón */
+    background-image: linear-gradient(to right,  #806314,   #0c396a); 
+}
+
+.skewed::after {
+    content: ''; /* Contenido vacío necesario para el pseudo-elemento */
+    position: absolute; /* Posición absoluta respecto al botón */
+    top: 8; /* Alinear con la parte superior del botón original */
+    left: 0; /* Alinear a la izquierda del botón */
+    width: 100%; /* Ancho igual al del botón */
+    height: 100%; /* Altura igual al del botón */
+    background: inherit; /* Usar el mismo fondo que el botón original */
+    border: inherit; /* Usar el mismo borde que el botón original */
+    border-radius: inherit; /* Usar el mismo borde redondeado que el botón original */
+    transform: skew(-0deg)translateX(30px); /* Deformación de 20 grados */
+    z-index: -1; /* Colocar detrás del botón original */
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Caceres Romina">
+        <meta name="description"
+            content="Zapatería Abba Shoe: Encuentra el calzado perfecto para hombres, mujeres y niños. Variedad de estilos y tallas.">
+        <meta name="keywords" content="zapatería, calzado, zapatos, botas, zapatillas, moda, calidad">
+        <meta name="robots" content="index, follow">
+        <title>AbbaShoe</title>
+        <!--icono bx y Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--STLYLE CSS-->
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/footer.css">
+
+    </head>
+
+<body>
+    <!--carrusel metodos de pagos-->
+    <div class="section-carrusel">
+        <div class="text-carousel">
+            <div class="text-slide ">
+                <i class="fas fa-credit-card"></i> Mercado Pago
+            </div>
+            <div class="text-slide ">
+                <i class="fas fa-exchange-alt"></i> Transferencias
+            </div>
+            <div class="text-slide ">
+                <i class="fas fa-money-bill"></i> Descuentos en Efectivo
+            </div>
+        </div>
+        </div>
+        <!--carrusel metodos de pagos-->
+
+        <!--MENU con boostrap-->
+
+        <header class="decoracion">
+
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="./index.html">
+                    <img src="/img/logos/logo_p.png" alt="Abba Shoes">
+                    </a>
+                </div>
+                
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="./pages/carro.php">CATALOGO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/sale.html">OFERTAS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/contactanos.html">NOSOTROS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/Local.html">SUCURSALES</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/registro.php">REGISTRATE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/loguin.phpS">INICIO</a></li>
+                            </ul>
+
+                            <div class="input-group ">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon1">lupa</button>
+                                <input type="text" class="form-control" placeholder="Buscar..."
+                                    aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+            
+            <!-- Segundo renglón del header -->
+            <div class="secondary-nav container">
+                <!--cart-icon-->
+            <i class='bx bx-shopping-bag' id="cart-icon">Compra</i>
+
+            <!--Cart-->
+            <div class="cart">
+                <h2 class="cart-title">Compra</h2>
+                <form action="insertarOrdenproducto.php" method="post" class="OrdenProducto-form"></form>
+                <!--Content-->
+                <div class="cart-content">
+
+                </div>
+
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy" value="Comprar" name="Comprar">Compra Ahora</button>
+                <!-- Cart Close -->
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+
+        </div>
+    </div>
+</header>

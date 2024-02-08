@@ -17,36 +17,24 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <!--STLYLE CSS-->
-        <link rel="stylesheet" href="./css/header.css">
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/carrusel-Index.css">
-        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./assets/css/header.css">
+        <link rel="stylesheet" href="./assets/css/footer.css">
+        <link rel="stylesheet" href="./assets/css/principal.css">
 
     </head>
 
 <body>
     <!--carrusel metodos de pagos-->
-    <div class="anuncio-container">
-        <div class="anuncio-H">
-            <div class="texto-anuncio0">
-                <i class="bi bi-cash"></i>
-                <p id="anuncio0">Mercado Pago</p>
+    <div class="section-carrusel">
+        <div class="text-carousel">
+            <div class="text-slide ">
+                <i class="fas fa-credit-card"></i> Mercado Pago
             </div>
-            <div class="texto-anuncio1">
-                <i class="bi bi-arrow-right"></i>
-                <p id="anuncio1">Transferencias</p>
+            <div class="text-slide ">
+                <i class="fas fa-exchange-alt"></i> Transferencias
             </div>
-            <div class="texto-anuncio2">
-                <i class="bi bi-currency-dollar"></i>
-                <p id="anuncio2">Descuentos en Efectivo</p>
-            </div>
-            <div class="texto-anuncio3">
-                <i class="bi bi-percent"></i>
-                <p id="anuncio3">Descuentos en...</p>
-            </div>
-            <div class="texto-anuncio4">
-                <i class="bi bi-basket"></i>
-                <p id="anuncio4">Sale....</p>
+            <div class="text-slide ">
+                <i class="fas fa-money-bill"></i> Descuentos en Efectivo
             </div>
         </div>
     </div>
@@ -56,28 +44,30 @@
 
     <header class="decoracion">
 
-        <div class="  container  d-flex justify-content-between align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">
+                <a href="./index.html">
                 <img src="/img/logos/logo_p.png" alt="Abba Shoes">
+                </a>
             </div>
-
-            <nav class="navbar navbar-expand ">
-                <div class="container-fluid ">
+    
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+    
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li><a href="#">CATALOGO</a></li>
-                            <li><a href="#">OFERTAS</a></li>
-                            <li><a href="#">NOSOTROS</a></li>
-                            <li><a href="#">SUCURSALES</a></li>
-                            <li><a href="#">REGISTRATE</a></li>
-                            <li><a href="#">INICIO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/carro.php">CATALOGO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/sale.html">OFERTAS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/contactanos.html">NOSOTROS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/Local.html">SUCURSALES</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/registro.php">REGISTRATE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/loguin.phpS">INICIO</a></li>
                         </ul>
-
+    
                         <div class="input-group ">
                             <button class="btn btn-outline-secondary" type="button" id="button-addon1">lupa</button>
                             <input type="text" class="form-control" placeholder="Buscar..."
@@ -87,35 +77,48 @@
                 </div>
             </nav>
         </div>
-
+    
     </header>
-    <!--MENU con boostrap-->
+    
+<!--////////////////-->
+<!--////////////////-->
 
-    <!--carusel 3 imagenes-->
+<!--carusel 3 imagenes-->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./img/flasherH1915-744/pag3.png" class="d-block img-fluid" style="height: 700px;" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="./img/flasherH1915-744/pag2.png" class="d-block img-fluid" style="height: 700px;" alt="...">
+                <img src="./assets/img/flasherH1915-744/pag2.png" class="d-block w-100" alt="Primera imagen">
             </div>
             <div class="carousel-item">
-                <img src="./img/flasherH1915-744/pag2.png" class="d-block img-fluid" style="height: 700px;" alt="...">
+                <img src="./assets/img/flasherH1915-744/pag3.png" class="d-block w-100" alt="Segunda imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/flasherH1915-744/pag2.png" class="d-block w-100" alt="Tercera imagen">
             </div>
         </div>
     </div>
-    <!--carusel 3 imagenes-->
+<!--////////////////-->
+   
 
-    <!--////////////////-->
 
-    <main>
+<div class="espacio"></div>    
 
-        <button class="boton-gigante">Haz clic aquí</button>
-
-        <!--tarjetas categoria-->
-        <section class="seccionPrincipal custom-container">
-            <div class="container py-">
+<main>
+    
+    
+    <div class="cont-btn">
+    
+        <a href="pagina_deportivos.html" class="skewed"><button>Deportivos</button></a>
+        <a href="pagina_urbanos.html" class="skewed"><button>Urbanos</button></a>
+        
+    
+    </div> 
+    
+    
+    
+    <!--tarjetas categoria-->
+    <section class="seccionPrincipal custom-container">
+        <div class="container py-">
                 <div class="row">
                     <div class="col mx-auto">
                         <h1>ABBA SHOE</h1>
