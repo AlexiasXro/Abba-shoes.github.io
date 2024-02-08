@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400; 500; 800&display=swap');
+/*font-family: 'Kumbh Sans', sans-serif;*/
 main {
     background-color:#0D1A2D;
 }
@@ -17,43 +18,56 @@ main {
     text-align: center; /* Alinear los botones al centro horizontal */
     
 }
+button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding:  30px 0em 0em 6em;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: inherit;
+    cursor: pointer;
+    font-size: 34px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    
+}
 
 .skewed {
-    margin: 20px; /* Márgenes alrededor del contenido CLAVE en objeto*/
+    margin: 20px; /*alrededor del contenido CLAVE en objeto*/
     position: relative;
+    display: inline-block; /* Para colocar los botones en línea */
+    text-align: center; /* Alineación del texto */
+    line-height: 50px; /* Alineación vertical del texto */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    transition: all 0.3s ease; /* Transición suave de los cambios */
     width: 500px; /* Ancho del botón */
     height: 100px; /* Altura del botón */
     margin-right: 100px;
-    background-color: #0c396a; /* Color de fondo */
+    background-color: #010912; /* Color de fondo */
     color: white; /* Color del texto */
     border: 4px solid transparent; /* Borde transparente para reservar espacio */
     border-image: linear-gradient(to right, #814C25,#FFDE59 ); /* Degradado de izquierda a derecha con dos colores */
     border-image-slice: 1; /* Ajuste para que el gradiente no se extienda */
     border-radius: 2px; /* Borde redondeado */
-    transform: skew(-20deg); /* Deformación de 20 grados */
-    display: inline-block; /* Para colocar los botones en línea */
-    text-align: center; /* Alineación del texto */
-    line-height: 50px; /* Alineación vertical del texto */
-    text-transform: uppercase; /* Convertir el texto a mayúsculas */
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
-    transition: all 0.3s ease; /* Transición suave de los cambios */
+    transform: skew(-24deg); /* Deformación de 20 grados */
 }
 
 .skewed:hover {
-    transform: skew(-20deg) scale(1.1); /* Al pasar el ratón, agrandar el botón */
-    background-image: linear-gradient(to right,  #092646,   #0c396a); 
+    transform: skew(-24deg) scale(1.1); /* Al pasar el ratón, agrandar el botón */
+    background-image: linear-gradient(to right,  #985716,   #0c396a); 
 }
 
 .skewed::after {
     content: ''; /* Contenido vacío necesario para el pseudo-elemento */
     position: absolute; /* Posición absoluta respecto al botón */
-    top: 8; /* Alinear con la parte superior del botón original */
+    top: 0; /* Alinear con la parte superior del botón original */
     left: 0; /* Alinear a la izquierda del botón */
     width: 100%; /* Ancho igual al del botón */
     height: 100%; /* Altura igual al del botón */
     background: inherit; /* Usar el mismo fondo que el botón original */
     border: inherit; /* Usar el mismo borde que el botón original */
     border-radius: inherit; /* Usar el mismo borde redondeado que el botón original */
-    transform: skew(-0deg)translateX(30px); /* Deformación de 20 grados */
+    transform: skew(-0deg)translateX(10px)translateY(10px); /* Deformación de 20 grados */
     z-index: -1; /* Colocar detrás del botón original */
 }

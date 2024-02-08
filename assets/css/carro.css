@@ -14,41 +14,12 @@ font-family: 'Tajawal', sans-serif;
     --main-color: #fd4646;
     --text-color: #171427;
     --bg--color: #fff0f0;
-    /*menu*/
-    --bgM-color:#343a40;
-    --bgM2-color:rgb(39, 43, 48);
-    --lu--color: #ffc10797;
-    --V-color: #fff0f0;
-    /*oferta*/
-    /*nosotros-pregunta ferecuente*/
-}
-
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    scroll-padding-top: 2rem;
-    scroll-behavior: smooth;
-    box-sizing:border-box;
-    list-style: none;
-    text-decoration: none;
-}
-:root{
-    --main-color: #00ffd9ba;
-    --text-color: #171427;
-    --bg--color: #fff0f0;
-    
-}
+}   
 
 body {
     color: var(--bg--color);
 }
-/**/
-.container{
-    
-    margin: 1px;
-    width: 100%;
-}
+/*contenido productos*/
 
 section{
     padding: 4rem 0 3rem;
@@ -148,6 +119,7 @@ disponible cuando sea necesario.*/
     gap: 1.5rem;
 }
 .product-box{
+    font-family: 'Poppins', sans-serif;
     position: relative;
 }
 .product-box:hover{

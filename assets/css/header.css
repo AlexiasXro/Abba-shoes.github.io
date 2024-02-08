@@ -84,6 +84,7 @@ header.search-container {
     background-color: #f8f9fa; /* Cambia el color de fondo según tus preferencias */
     padding: 10px 20px; /* Ajusta el espaciado según sea necesario */
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Añade sombra según sea necesario */
+    margin-top: 100px;
 }
 /*Cart*/
 
