@@ -1,4 +1,6 @@
-
+footer a {
+    text-decoration: none;
+}
 .pie-pagina {
     background-color: #091220; /* Cambia el color de fondo según tus preferencias */
 }
@@ -16,9 +18,14 @@
 }
 
 .redes-sociales a {
-    margin-right: 10px; /* Espaciado entre iconos de redes sociales */
+    margin-right: 15px; /* Espaciado entre iconos de redes sociales */
+    text-decoration: none;
 }
 
 .redes-sociales a:last-child {
     margin-right: 0; /* No aplicar margen derecho al último icono */
+}
+.redes-img {
+    width: 40px; /* Tamaño deseado de las imágenes */
+    margin-right: 15px; /* Espacio entre cada imagen */
 }

@@ -16,9 +16,7 @@ font-family: 'Tajawal', sans-serif;
     --bg--color: #fff0f0;
 }   
 
-body {
-    color: var(--bg--color);
-}
+
 /*contenido productos*/
 
 section{

@@ -1,23 +1,30 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
+<head>
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Caceres Romina">
-        <meta name="description" content="Zapatería Abba Shoe: Encuentra el calzado perfecto para hombres, mujeres y niños. Variedad de estilos y tallas.">
+        <meta name="description"
+            content="Zapatería Abba Shoe: Encuentra el calzado perfecto para hombres, mujeres y niños. Variedad de estilos y tallas.">
         <meta name="keywords" content="zapatería, calzado, zapatos, botas, zapatillas, moda, calidad">
         <meta name="robots" content="index, follow">
-        <title>Comprar es facil</title>
-        <!--CSS Personal-->
-        <link rel="stylesheet" href="../../css/newgeneral.css">
-        <link rel="stylesheet" href="../../css/">
-        <link rel="stylesheet" href="../../css/s-carrusel.css">
-        <link rel="stylesheet" href="../../css/menu.css">
-        <!--CDN booststrap link-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <!---->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <!--Armar carpeta css-->
+        <title>Guia de compra</title>
+        <!--icono bx y Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-xxxxxx" crossorigin="anonymous" />
+        <!--STLYLE CSS-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!--STLYLE CSS iconos-->
+        <link rel="stylesheet" href="../assets/css/header.css">
+        <link rel="stylesheet" href="../assets/css/footer.css">
+        <link rel="stylesheet" href="../assets/css/principal.css">
+        <link rel="stylesheet" href="../assets/css/carro.css">
         <style>
             .container-fluid-custom {
                 padding: 0;
@@ -76,116 +83,167 @@
                 text-decoration: underline; 
             }
         
-
+        
         </style>
-
     </head>
+
 <body>
-    <div class="section-carrusel">
-        <div class="text-carousel">
+    <!--carrusel metodos de pagos-->
+    <a href="./pages/tipopago.html" class="section-carrusel text-center">
+        <div class="text-carousel  bg-dark bg-subtle">
             <div class="text-slide ">
-                <i class="fas fa-credit-card"></i> Mercado Pago
+                <i class='bx bxl-mastercard text-white' >&nbspTarjetas de credito</i>
             </div>
             <div class="text-slide ">
-                <i class="fas fa-exchange-alt"></i> Transferencias
+                <i class='bx bxs-discount text-white'>&nbspTransferencias Bancarias</i>
             </div>
             <div class="text-slide ">
-                <i class="fas fa-money-bill"></i> Descuentos en Efectivo
+                <i class='bx bx-money-withdraw text-white'>&nbspDescuentos en Efectivo</i> 
+            </div>
+            <div class="text-slide ">
+                <i class='bx bxs-package text-white'>&nbspEnvios gratis desde $75.000</i>
             </div>
         </div>
-    </div>
-    
+    </a>
+    <!--carrusel metodos de pagos-->
+
     <!--MENU con boostrap-->
-    <div class="container-fluid container-fluid-custom">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-light">
-            <a class="navbar-brand" href="../../index.html">
-                <img src="../../img/logos/LOGO-ABBA.jpeg" alt="Logo de Abba Shoe" width="80" height="80" class="d-inline-block align-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Registrarse
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" href="#">Crear cuenta</a>
-                            <a class="dropdown-item" href="#">Iniciar sesión</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Acerca de nosotros
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <a class="dropdown-item" href="./local.html">Local</a>
-                            <a class="dropdown-item" href="#">Contacto</a>
-                            <a class="dropdown-item" href="./html/info.html">Historia</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Preguntas Frecuentes
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                            <a class="dropdown-item" href="./html/talle.html">Talle</a>
-                            <a class="dropdown-item" href="./html/Guia.html">Cómo comprar</a>
-                            <a class="dropdown-item" href="./html/InfoPagos.html">Métodos de pago</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Carro de compras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Favoritos</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Catálogo
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                            <a class="dropdown-item" href="#">Mujeres</a>
-                            <a class="dropdown-item" href="#">Hombres</a>
-                            <a class="dropdown-item" href="#">Niños</a>
-                            <a class="dropdown-item" href="#">Zapatillas</a>
-                            <a class="dropdown-item" href="#">Botas</a>
-                            <a class="dropdown-item" href="#">Sandalias</a>
-                            <a class="dropdown-item" href="#">Zapatos</a>
-                            <a class="dropdown-item" href="#">Accesorios</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
-                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
+
+    <header class="decoracion">
+
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href=".././index.html">
+                    <img src="../assets/logos/blanco.png" alt="Abba Shoes" >
+                </a>
             </div>
-        </nav>
-    </div>
+
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav justify-content-center">
+                            <li class="nav-item"><a class="nav-link" href="../pages/carro.html">CATALOGO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/sale.html">OFERTAS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/contactanos.html">NOSOTROS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/Local.html">SUCURSALES</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/registro.php">REGISTRATE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/inicio.php">INICIO</a></li>
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline" type="submit">Buscar</button>
+                          </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <!--////////////////-->
+        
+            <!-- Segundo navegador -->
+            <nav class="navbar navbar-expand-md navbar-primary bg-subtlet">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-bs-toggle" href="#" id="caracteristicasDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class='bx bx-category-alt' ></i> Categoria
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="caracteristicasDropdown">
+                                    <li><button class="dropdown-item">Zapatos</button></li>
+                                    <li><button class="dropdown-item">Zapatillas</button></li>
+                                    <li><button class="dropdown-item">Sandalias</button></li>
+                                    <li><button class="dropdown-item">Botas</button></li>
+                                    <li><button class="dropdown-item">Accesorios</button></li>
+                                    <li><button class="dropdown-item">Sale</button></li>
+                                    <li><button class="dropdown-item">2x1</button></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class='bx bx-user-circle' id=""></i> Usuario
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class='bx bx-message-rounded-detail' ></i> Contactanos
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-bs-toggle" href="#" id="filtrarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class='bx bx-filter'></i> Filtrar
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="filtrarDropdown">
+                                    <li><button class="dropdown-item">Precio Menor</button></li>
+                                    <li><button class="dropdown-item">Precio Mayor</button></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- Icono del carrito -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class='bx bxs-cart'id="cart-icon"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--////////////////-->
+                 <!--Cart-->
+                 <div class="cart">
+                    <h2 class="cart-title">Compra</h2>
+                    <form action="insertarOrdenproducto.php" method="post" class="OrdenProducto-form"></form>
+                    <!--Content-->
+                    <div class="cart-content">
+        
+                    </div>
+        
+                    <!-- Total -->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+        
+                    <!-- Buy Button -->
+                    <button type="button" class="btn-buy" value="Comprar" name="Comprar">Compra Ahora</button>
+                    <!-- Cart Close -->
+                    <i class="bx bx-x" id="close-cart"></i>
+                </div>
+            </nav>
+            
+    
+        </header>
+        <!--////////////////-->
 
     <!--contenido informativo compra - pago-->
     <div class="container">
-        <div class="contenedor-con-imagen">
+        <div class="contenedor-con-imagen ">
             <div class="cont">
                 <h3 class="display-4">Guía para Comprar y Pagar Calzado en Línea</h3>
                     <br>
                     <ol class="custom-bullet">
                         <li><p><strong>Paso 1: </strong>Acceder al Catálogo de Calzado<br>Abre tu navegador y ve al sitio web de la tienda <a href="#" class="enlace">Abba Shoe.</a>. Navega por las categorías o utiliza la función de búsqueda para encontrar el tipo de calzado que te interesa.</p></li>
                         <li><p><strong>Paso 2: </strong>Seleccionar el Producto<br>Haz clic en el producto de calzado que desees comprar para obtener más detalles...</p></li>
-                        <li><p><strong>Paso 3: </strong>Agregar al Carrito<br>Después de confirmar que has elegido el producto correcto, selecciona la <a href="#" class="enlace">talla</a> y el color que deseas...</p></li>
-                        <li><p><strong>Paso 4: </strong>Revisar el Carrito de Compras<br>Dirígete a la sección <a href="#" class="enlace">"Mi Carrito"</a> o para revisar los productos que has seleccionado...</p></li>
+                        <li><p><strong>Paso 3: </strong>Agregar al Carrito<br>Después de confirmar que has elegido el producto correcto, selecciona el <a href="#" class="enlace">talle</a> y el color que deseas...</p></li>
+                        <li><p><strong>Paso 4: </strong>Revisar el Carrito de Compras<br>Dirígete a la sección <a href="../pages/carro.html" class="enlace">"Mi Carrito"</a> o para revisar los productos que has seleccionado...</p></li>
                         <li><p><strong>Paso 5: </strong>Confirmar la Compra<br>En el carrito de compras, verifica que los productos sean los que deseas adquirir y la cantidad deseada...</p></li>
                         <li><p><strong>Paso 6: </strong>Generar Factura y Pago<br>Antes deberás <a href="#" class="enlace">registrarte</a> para continuar la compra. En esta etapa, proporciona tus datos personales, dirección de entrega y elige el método de pago...</p></li>
-                        <li><p><strong>Paso 7: </strong>Confirmación de Pago<br>Después de realizar el <a href="#" class="enlace">pago</a>, recibirás una confirmación de tu compra en la pantalla y se enviarán la factura y los detalles de tu compra a tu WhatsApp o correo electrónico...</p></li>
+                        <li><p><strong>Paso 7: </strong>Confirmación de Pago<br>Después de realizar el <a href="../pages/tipopago.html" class="enlace">pago</a>, recibirás una confirmación de tu compra en la pantalla y se enviarán la factura y los detalles de tu compra a tu WhatsApp o correo electrónico...</p></li>
                         <li><p><strong>Paso 8: </strong>Coordinar la Entrega<br>Una vez confirmado el pago, recibirás un comprobante de pago y podrás coordinar la entrega con la vendedora, ya sea retirando el calzado en la tienda o solicitando envío a domicilio...</p></li>
                     </ol>
                     <h4>Consejos adicionales:</h4>
                 <p>Asegúrate de que los detalles del producto, la talla y el color sean correctos antes de confirmar la compra.</p>
                 <p>Verifica la política de devoluciones de la tienda en caso de que necesites hacer un cambio o devolución.</p>
                 <p>Mantén un registro de tus comprobantes de pago y confirmación de compra para futuras referencias.</p>
-                <h3><a href="#" class="enlace"><strong>Gracias por vicitarnos.</strong></a></h3>
+                <h3><a href="../index.html" class="enlace"><strong>Gracias por vicitarnos.</strong></a></h3>
                 </div>
             </div>
         </div>
@@ -195,58 +253,64 @@
     
 
 
-    <!--Footer o pie de pagina-->
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <a href="../../index.html" >
-                        <img src="../../img/logos/LOGO-ABBA.jpeg" alt="Logo de Abba Shoe">
-                    </a>
-                </figure>
+<!--footer-->
+<footer class="  text-left text-secondary mt-auto ">
+    <div class="decoracionfooter pie-pagina">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <figure>
+                        <a href="../index.html">
+                            <img src="../assets/logos/logoBcuadro.png" alt="Logo de Abba Shoe" width="250px"
+                                class="img-fluid">
+                        </a>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.instagram.com/abba.shoe/" class="redes-sociales" ><img src="../assets/logos/instagram.png"class="redes-img" alt="Instagram">Instagram AbbaShoes</a></li>
+                            <li><a href="https://www.instagram.com/abba.shoe/" class="redes-sociales" ><img src="../assets/logos/facebook.png"class="redes-img" alt="Facebook">Facebook AbbaShoes</a></li>
+                            <li><a href="https://web.whatsapp.com/" class="redes-sociales" ><img src="../assets/logos/messenger.png" class="redes-img" alt="WhatsApp">+543644xxxxxx</a></li>
+                            <li><a href="#" class="text-secondary">Email: AbbaShoes@gmail.com</a></li>
+                            <li><a href="../pages/comocomprar.html" class="text-secondary" >Ayuda</a></li>
+                            <li><a href="../pages/preguntas.html" class="text-secondary" >Preguntas Frecuentes</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Horarios Abierto</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../pages/Local.html" class="text-secondary">Lunes a Miércoles de 08:30 a 12:00 hs</a></li>
+                        <li><a href="../pages/Local.html" class="text-secondary">Jueves 12:30 a 18:30 hs</a></li>
+                        <li><a href="../pages/Local.html" class="text-secondary">Viernes 14:30 a 20:30 hs</a></li>
+                        <li><a href="../pages/Local.html" class="text-secondary">Sábado 09:00 a 11:00 hs</a></li>
+                        <li><a href="../pages/Local.html" class="text-secondary">Domingo cerrado</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="box">
-                <h3 class="titulo">Horarios Abierto</h3>
-                <p>Lunes a Miércoles de 08:30 a 12:00 hs</p>
-                <p>Jueves 12:30 a 18:30 hs</p>
-                <p>Viernes 14:30 a 20:30 hs</p>
-                <p>Sábado 09:00 a 11:00 hs</p>
-                <p class="cerrado">Domingo cerrado</p>
-                </div>
-            
-
-            <div class="box">
-                <h3 class="titulo">SIGUENOS</h3>
-                <div class="red-social">
-                    <a href="#"></a><img src="../../img/favicon/tienda.png" class="icon" alt=""></a>
-                    <a href="#"></a><img src="../../img/favicon/WPP.png" class="icon" alt=""></a>
-                    <a href="#"></a><img src="../../img/favicon/ffaacee.png" class="icon" alt=""></a>
-                    <a href="#"></a><img src="../../img/favicon/Insta.png" class="icon" alt=""></a>
-                </div>
-                <div class="l">
-                <a href="">Direción: Barrio San Calletano</a>
-                <a href="#">WhatsApp +5493644</a> 
-                <a href="#">Nosotros</a>
-                <a href="#">Cómo comprar</a>
-                <a href="#">Preguntas Frecuentes</a>
-                </div>
-        
+            <div class="col-md-20">
+                <hr>
+                <a href="https://www.instagram.com/arominaca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    <p class="text-secondary">Derechos Reservados © 2024 KNDAlexias</p>
+                </a>
+                
             </div>
         </div>
-    
-        <div class="grupo-2">
-            <small>&copy;2023<b> KNDAlexias </b>- Todo los Derechos Reservados. </small>
-        </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    
-    <!--CDN bootstrap 5.3.2-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!--JS personales-->
-    <script src="../../js/anuncio.js"></script>
-    <script src="../../js/main.js"></script>
+<!--js boostrap-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<!--js lieso-->
+<script src="../assets/js/anuncio.js"></script>
+<script src="../assets/js/cart.js"></script>
+<script src="../assets/js/anuncio.js"></script>
+<script src="../assets/js/carro.js"></script>
+
 </body>
+
 </html>

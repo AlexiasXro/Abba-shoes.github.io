@@ -28,19 +28,22 @@
 
 <body>
     <!--carrusel metodos de pagos-->
-    <div class="section-carrusel">
-        <div class="text-carousel text-center text-bs-info bg-subtle">
+    <a href="./pages/tipopago.html" class="section-carrusel text-center">
+        <div class="text-carousel  bg-dark bg-subtle">
             <div class="text-slide ">
-                <i class="fas fa-credit-card"></i> Mercado Pago
+                <i class='bx bxl-mastercard text-white' >&nbspTarjetas de credito</i>
             </div>
             <div class="text-slide ">
-                <i class="fas fa-exchange-alt"></i> Transferencias
+                <i class='bx bxs-discount text-white'>&nbspTransferencias Bancarias</i>
             </div>
             <div class="text-slide ">
-                <i class="fas fa-money-bill"></i> Descuentos en Efectivo
+                <i class='bx bx-money-withdraw text-white'>&nbspDescuentos en Efectivo</i> 
+            </div>
+            <div class="text-slide ">
+                <i class='bx bxs-package text-white'>&nbspEnvios gratis desde $75.000</i>
             </div>
         </div>
-    </div>
+    </a>
     <!--carrusel metodos de pagos-->
 
     <!--MENU con boostrap-->
@@ -50,7 +53,7 @@
         <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">
                 <a href=".././index.html">
-                    <img src="/img/logos/logo_p.png" alt="Abba Shoes">
+                    <img src="./assets/logos/blanco.png" alt="Abba Shoes" >
                 </a>
             </div>
 
@@ -62,18 +65,18 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="./pages/carro.php">CATALOGO</a></li>
+                        <ul class="navbar-nav justify-content-center">
+                            <li class="nav-item"><a class="nav-link" href="./pages/carro.html">CATALOGO</a></li>
                             <li class="nav-item"><a class="nav-link" href="./pages/sale.html">OFERTAS</a></li>
                             <li class="nav-item"><a class="nav-link" href="./pages/contactanos.html">NOSOTROS</a></li>
                             <li class="nav-item"><a class="nav-link" href="./pages/Local.html">SUCURSALES</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./pages/registro.php">REGISTRATE</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./pages/loguin.php">INICIO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/registro.html">REGISTRATE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/inicio.html">INICIO</a></li>
                         </ul>
 
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline" type="submit">Buscar</button>
                           </form>
                     </div>
                 </div>
@@ -154,7 +157,7 @@
                             <img src="./assets/img/cartW269-H518/2.png" class="card-img" alt="Imagen 1">
                             <div class="card-img-overlay">
                                 <h4 class="card-title display-7">ZAPATOS</h4>
-                                <p class="card-text display-3">fiestas</p>
+                                <p class="card-text display-3">Fiestas</p>
                                 <a href="#" class="boton-degradado">Ver más</a>
                             </div>
                         </div>
@@ -200,7 +203,7 @@
                     <div class="col-md-4">
                         <figure>
                             <a href="./index.html">
-                                <img src="./img/logos/LOGO-ABBA.jpeg" alt="Logo de Abba Shoe" width="200px"
+                                <img src="./assets/logos/logoBcuadro.png" alt="Logo de Abba Shoe" width="250px"
                                     class="img-fluid">
                             </a>
                         </figure>
@@ -208,28 +211,32 @@
                     <div class="col-md-4">
                         <h5>Contacto</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="text-secondary">Email</a></li>
-                            <li><a href="#" class="text-secondary">Teléfono</a></li>
-                            <li><a href="#" class="redes-sociales"><img src="instagram.png" alt="Instagram"></a></li>
-                            <li><a href="#" class="redes-sociales"><img src="facebook.png" alt="Facebook"></a></li>
-                            <li><a href="#" class="redes-sociales"><img src="whatsapp.png" alt="WhatsApp"></a></li>
-
+                            
+                            <li><a href="https://www.instagram.com/abba.shoe/" class="redes-sociales" ><img src="./assets/logos/instagram.png"class="redes-img" alt="Instagram">Instagram AbbaShoes</a></li>
+                            <li><a href="https://www.instagram.com/abba.shoe/" class="redes-sociales" ><img src="./assets/logos/facebook.png"class="redes-img" alt="Facebook">Facebook AbbaShoes</a></li>
+                            <li><a href="https://web.whatsapp.com/" class="redes-sociales" ><img src="./assets/logos/messenger.png" class="redes-img" alt="WhatsApp">+543644xxxxxx</a></li>
+                            <li><a href="#" class="text-secondary">Email: AbbaShoes@gmail.com</a></li>
+                            <li><a href="./pages/comocomprar.html" class="text-secondary" >Ayuda</a></li>
+                            <li><a href="./pages/preguntas.html" class="text-secondary" >Preguntas Frecuentes</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
                         <h5>Horarios Abierto</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="text-secondary">Lunes a Miércoles de 08:30 a 12:00 hs</a></li>
-                            <li><a href="#" class="text-secondary">Jueves 12:30 a 18:30 hs</a></li>
-                            <li><a href="#" class="text-secondary">Viernes 14:30 a 20:30 hs</a></li>
-                            <li><a href="#" class="text-secondary">Sábado 09:00 a 11:00 hs</a></li>
-                            <li><a href="#" class="text-secondary">Domingo cerrado</a></li>
+                            <li><a href="./pages/Local.html" class="text-secondary">Lunes a Miércoles de 08:30 a 12:00 hs</a></li>
+                            <li><a href="./pages/Local.html" class="text-secondary">Jueves 12:30 a 18:30 hs</a></li>
+                            <li><a href="./pages/Local.html" class="text-secondary">Viernes 14:30 a 20:30 hs</a></li>
+                            <li><a href="./pages/Local.html" class="text-secondary">Sábado 09:00 a 11:00 hs</a></li>
+                            <li><a href="./pages/Local.html" class="text-secondary">Domingo cerrado</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-20">
                     <hr>
-                    <p class="text-secondary">Derechos Reservados © 2024 KNDAlexias</p>
+                    <a href="https://www.instagram.com/arominaca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <p class="text-secondary">Derechos Reservados © 2024 KNDAlexias</p>
+                    </a>
+                    
                 </div>
             </div>
         </div>

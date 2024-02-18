@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+/*font-family: 'Kumbh Sans', sans-serif;*/
+
+
+.faq-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/pregun.png');
+    background-size: cover;
+    color: #fff;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.faq-content {
+    max-width: 800px;
+    padding: 20px;
+    text-align:left;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    margin-bottom: 10px;
+}
+
+.faq-content h2, .faq-content h4 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

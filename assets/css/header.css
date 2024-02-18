@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400; 500; 800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
 /*font-family: 'Kumbh Sans', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Prompt&family=Tajawal:wght@500;900&display=swap');
 /*font-family: 'Josefin Sans', sans-serif;
@@ -28,24 +29,30 @@ font-family: 'Open Sans', sans-serif;
     padding: 0;
     
 }
-
+h1{
+    color: #171427;
+}
 
 header {
-    background-color: #091220;
+    background-color: var(--color-fondo);
 
 }
 
 .decoracion {
-    border-top: 5px solid transparent; /* Borde superior transparente para reservar espacio */
-    border-image: linear-gradient(to right, #814C25, #FFDE59); /* Degradado de izquierda a derecha con dos colores */
-    border-image-slice: 1; /* Ajuste para que el gradiente no se extienda al resto de los bordes */
+    border-top: 5px solid transparent; 
+    border-image: linear-gradient(to right, #814C25, #FFDE59); 
+    border-image-slice: 1; 
     height: 100px;/*altura del head*/
 }
 /*logo header NOSE COMO UBICARLO A LA IZQUIERDA*/
 
 .logo img {
-    width: 180px;
-    border: solid 2px rgb(189, 210, 97);
+    width: 80px; 
+    height: auto;
+    margin: 10px;
+    opacity: 0.9; 
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); 
+    
 }
 
 
@@ -55,17 +62,17 @@ header nav ul {
     display: flex;
     gap: 50px; /* Espacio entre elementos de la lista */
     margin-right: 10px;
-    margin-left:0px;/*alejo el logo de catalogo*/
+   
     align-items: center;
 }
 .navbar {
-    background-color: #091220; /* Color de fondo */
+    background-color: var(--color-fondo); /* Color de fondo */
     z-index: 2;
 }
 
 /* Estilo para el botón de la hamburguesa */
 .navbar-toggler {
-    border-color: white; /* Color del borde del botón de la hamburguesa */
+    border-color: var(--bg--color); 
 }
 .navbar-nav .nav-link{
     text-decoration: none;
@@ -73,7 +80,9 @@ header nav ul {
     color: #ddd2d2;
     
 }
-
+.navbar-nav .nav-link:hover {
+    color: var(--gradiente-color-1); /* Cambia el color al pasar el cursor sobre el enlace */
+}
 
 header.search-container {
     display: flex;
@@ -85,20 +94,17 @@ header.search-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f8f9fa; /* Cambia el color de fondo según tus preferencias */
-    padding: 10px 20px; /* Ajusta el espaciado según sea necesario */
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Añade sombra según sea necesario */
+    background-color: #f8f9fa; 
+    padding: 10px 20px; 
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); 
     margin-top: 100px;
 }
-/*Cart*/
+/*Cart calsados*/
 
 #cart-icon {
     font-size: 2.5rem;
     cursor: pointer;
     margin-right: 20px;
-    /*background-image: linear-gradient(to right, #814C25, #FFDE59); 
-    border-radius: 30%;
-    */
 }
 .cart{
     position: fixed;
@@ -140,20 +146,47 @@ header.search-container {
 .secondary-nav .icons i {
     font-size: 24px;
     font-family: 'Kumbh Sans', sans-serif;
-    margin-right: 10px; /* Ajusta el espaciado entre iconos según sea necesario */
+    margin-right: 10px; 
 }
 
 .secondary-nav .links a {
-    margin-left: 20px; /* Ajusta el espaciado entre enlaces según sea necesario */
+    margin-left: 20px; 
     text-decoration: none;
-    color: var(--bg--color); /* Cambia el color del texto según tus preferencias */
+    color: var(--bg--color); 
 }
 
 .secondary-nav .links a:hover {
-    text-decoration: underline; /* Efecto de subrayado al pasar el cursor */
+    text-decoration: underline; 
 }
 
 .text-slide i{
     letter-spacing: 3px;
     font-family: 'Tajawal', sans-serif
+}
+
+
+/* Buscador */
+form.d-flex {
+    border-image: linear-gradient(to right, #814C25, #FFDE59);
+    border: 2px solid transparent; 
+    border-radius: 10px; 
+}
+
+button.btn {
+    border-image: linear-gradient(to right, #814C25, #FFDE59); 
+    border-image-slice: 1; 
+    padding: 5px 10px; 
+    color: white; 
+    font-family: 'Kumbh Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+button.btn:hover {
+    opacity: 0.9;
+    background-color:#c96822 ; 
+}
+
+/* anuncio inicial */
+.text-slide {
+    font-family: 'Kumbh Sans', sans-serif; 
 }
