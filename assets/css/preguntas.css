@@ -4,7 +4,7 @@
 
 
 .faq-section {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/pregun.png');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../img/pregun.png');
     background-size: cover;
     color: #fff;
     font-family: 'Kumbh Sans', sans-serif;
@@ -26,4 +26,15 @@
 
 .faq-content h2, .faq-content h4 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.enlace {
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: bold; /* Hacer la letra negrita */
+    color: #6291f59f;
+    transition: color 0.3s ease-in-out; 
+}
+.enlace:hover {
+    text-decoration: underline; 
+    color: #ffa60081; /* Cambiar el color del enlace al pasar el cursor sobre él */
 }

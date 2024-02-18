@@ -23,68 +23,9 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!--STLYLE CSS iconos-->
         <link rel="stylesheet" href="../assets/css/header.css">
         <link rel="stylesheet" href="../assets/css/footer.css">
-        <link rel="stylesheet" href="../assets/css/principal.css">
+        <link rel="stylesheet" href="../assets/css/comocomprar.css">
         <link rel="stylesheet" href="../assets/css/carro.css">
-        <style>
-            .container-fluid-custom {
-                padding: 0;
-                margin: 0;
-            }
-            .custom-container {
-                padding-top: 80px; 
-                padding-bottom: 80px; 
-                margin-top: 50px; 
-                margin-bottom: 50px; 
-            }
-            .custom-bullet {
-            list-style: none;
-            counter-reset: step-counter;
-            padding-left: 0;
-            }
-            .custom-bullet li {
-                position: relative;
-                padding-left: 2em;
-                margin-bottom: 0.5em;
-                cursor: pointer;
-                transition: color 0.3s ease-in-out;
-            }
-            .custom-bullet li::before {
-                content: counter(step-counter);
-                counter-increment: step-counter;
-                display: inline-block;
-                width: 1.6em;
-                height: 1.6em;
-                border-radius: 50%;
-                background-color: #fd7e14; 
-                color: white;
-                text-align: center;
-                line-height: 1.6em;
-                position: absolute;
-                left: 0;
-                top: 0;
-                transition: transform 0.3s ease-in-out;
-            }
-            .custom-bullet li:hover::before {
-                transform: scale(1.5);
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
-            }
-            .custom-bullet li:hover {
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-            }
-            
-            /* Estilos para los enlaces */
-            .enlace {
-                color: #fd7e14; 
-                text-decoration: none; 
-                transition: color 0.3s ease-in-out; 
-            }
-            .enlace:hover {
-                color: #fd7e14; 
-                text-decoration: underline; 
-            }
-        
-        
-        </style>
+
     </head>
 
 <body>
@@ -224,29 +165,47 @@
         <!--////////////////-->
 
     <!--contenido informativo compra - pago-->
-    <div class="container">
-        <div class="contenedor-con-imagen ">
-            <div class="cont">
-                <h3 class="display-4">Guía para Comprar y Pagar Calzado en Línea</h3>
-                    <br>
-                    <ol class="custom-bullet">
-                        <li><p><strong>Paso 1: </strong>Acceder al Catálogo de Calzado<br>Abre tu navegador y ve al sitio web de la tienda <a href="#" class="enlace">Abba Shoe.</a>. Navega por las categorías o utiliza la función de búsqueda para encontrar el tipo de calzado que te interesa.</p></li>
-                        <li><p><strong>Paso 2: </strong>Seleccionar el Producto<br>Haz clic en el producto de calzado que desees comprar para obtener más detalles...</p></li>
-                        <li><p><strong>Paso 3: </strong>Agregar al Carrito<br>Después de confirmar que has elegido el producto correcto, selecciona el <a href="#" class="enlace">talle</a> y el color que deseas...</p></li>
-                        <li><p><strong>Paso 4: </strong>Revisar el Carrito de Compras<br>Dirígete a la sección <a href="../pages/carro.html" class="enlace">"Mi Carrito"</a> o para revisar los productos que has seleccionado...</p></li>
-                        <li><p><strong>Paso 5: </strong>Confirmar la Compra<br>En el carrito de compras, verifica que los productos sean los que deseas adquirir y la cantidad deseada...</p></li>
-                        <li><p><strong>Paso 6: </strong>Generar Factura y Pago<br>Antes deberás <a href="#" class="enlace">registrarte</a> para continuar la compra. En esta etapa, proporciona tus datos personales, dirección de entrega y elige el método de pago...</p></li>
-                        <li><p><strong>Paso 7: </strong>Confirmación de Pago<br>Después de realizar el <a href="../pages/tipopago.html" class="enlace">pago</a>, recibirás una confirmación de tu compra en la pantalla y se enviarán la factura y los detalles de tu compra a tu WhatsApp o correo electrónico...</p></li>
-                        <li><p><strong>Paso 8: </strong>Coordinar la Entrega<br>Una vez confirmado el pago, recibirás un comprobante de pago y podrás coordinar la entrega con la vendedora, ya sea retirando el calzado en la tienda o solicitando envío a domicilio...</p></li>
-                    </ol>
-                    <h4>Consejos adicionales:</h4>
+    <section class="faq-section">
+        <div class="container faq-content">
+            <div class="deco ">
+                <h4>Guía para Comprar y Pagar Calzado en Línea</h4>
+                <br>
+                <div class="deco ">
+                    <h4>Paso 1:</h4>
+                    <p><strong>Acceder al Catálogo de Calzado</strong><br>Abre tu navegador y ve al sitio web de la tienda <a href="../pages/Local.html" class="enlace">Abba Shoe.</a>. Navega por las categorías o utiliza la función de búsqueda para encontrar el tipo de calzado que te interesa.</p>
+                    
+                    <h4>Paso 2:</h4>
+                    <p><strong>Seleccionar el Producto</strong><br>Haz clic en el producto de calzado que desees comprar para obtener más detalles...</p>
+                    
+                    <h4>Paso 3:</h4>
+                    <p><strong>Agregar al Carrito</strong><br>Después de confirmar que has elegido el producto correcto, selecciona el <a href="../pages/NEW.html" class="enlace">talle</a> y el color que deseas...</p>
+                    
+                    <h4>Paso 4:</h4>
+                    <p><strong>Revisar el Carrito de Compras</strong><br>Dirígete a la sección <a href="../pages/carro.html" class="enlace">"Mi Carrito"</a> o para revisar los productos que has seleccionado...</p>
+                    
+                    <h4>Paso 5:</h4>
+                    <p><strong>Confirmar la Compra</strong><br>En el carrito de compras, verifica que los productos sean los que deseas adquirir y la cantidad deseada...</p>
+                    
+                    <h4>Paso 6:</h4>
+                    <p><strong>Generar Factura y Pago</strong><br>Antes deberás <a href="../pages/registro.html" class="enlace">registrarte</a> para continuar la compra. En esta etapa, proporciona tus datos personales, dirección de entrega y elige el método de pago...</p>
+                    
+                    <h4>Paso 7:</h4>
+                    <p><strong>Confirmación de Pago</strong><br>Después de realizar el <a href="../pages/tipopago.html" class="enlace">pago</a>, recibirás una confirmación de tu compra en la pantalla y se enviarán la factura y los detalles de tu compra a tu WhatsApp o correo electrónico...</p>
+                    
+                    <h4>Paso 8:</h4>
+                    <p><strong>Coordinar la Entrega</strong><br>Una vez confirmado el pago, recibirás un comprobante de pago y podrás coordinar la entrega con la vendedora, ya sea retirando el calzado en la tienda o solicitando envío a domicilio...</p>
+                </div>
+                <h4>Consejos adicionales:</h4>
                 <p>Asegúrate de que los detalles del producto, la talla y el color sean correctos antes de confirmar la compra.</p>
                 <p>Verifica la política de devoluciones de la tienda en caso de que necesites hacer un cambio o devolución.</p>
                 <p>Mantén un registro de tus comprobantes de pago y confirmación de compra para futuras referencias.</p>
-                <h3><a href="../index.html" class="enlace"><strong>Gracias por vicitarnos.</strong></a></h3>
-                </div>
+                <h3><a href="../index.html" class="enlace">Gracias por visitarnos.</a></h3>
+                <br>
             </div>
         </div>
+
+    </section>
+    
     
     
     

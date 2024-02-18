@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+/*font-family: 'Kumbh Sans', sans-serif;*/
+
+.faq-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../img/comocompra.png');
+    background-size: cover;
+    color: #f3f3f3;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.faq-content {
+    max-width: 800px;
+    padding: 20px;
+    text-align:left;
+}
+
+.deco {
+    margin-bottom: 20px;
+}
+
+.deco h3 {
+    margin-bottom: 10px;
+}
+
+.faq-content h2, .faq-content h4 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.enlace {
+    color: #3c97e2; 
+    text-decoration: none; 
+    transition: color 0.3s ease-in-out; 
+    font-weight: bold;
+}
+.enlace:hover {
+    color: #fd7e14; 
+    text-decoration: underline; 
+}
