@@ -14,15 +14,14 @@
         <title>AbbaShoe</title>
         <!--icono bx y Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xxxxxx" crossorigin="anonymous" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xxxxxx" crossorigin="anonymous" />
             <!-- Boxicons CSS -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <!--STLYLE CSS-->
-        <link rel="stylesheet" href="./assets/css/header.css">
-        <link rel="stylesheet" href="./assets/css/footer.css">
-
+        <link rel="stylesheet" href="../assets/css/carro.css">
+        <link rel="stylesheet" href="../assets/css/header.css">
+        <link rel="stylesheet" href="../assets/css/footer.css">
     </head>
 
 <body>
@@ -157,3 +156,109 @@
             
     
         </header>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Caceres Romina">
+    <meta name="description" content="Zapatería Abba Shoe: Encuentra el calzado perfecto para hombres, mujeres y niños. Variedad de estilos y tallas.">
+    <meta name="keywords" content="zapatería, calzado, zapatos, botas, zapatillas, moda, calidad">
+    <meta name="robots" content="index, follow">
+    <title>Carrito</title>
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/carro.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+
+
+
+</head>
+
+
+
+
+
+
+<!--Shop-->
+<section class="shop container">
+    <h3 class="section-title">Productos</h3>
+    <!-- Content -->
+    <div class="shop-content">
+        <!-- Iterar sobre la lista de productos y mostrar cada uno -->
+        <?php foreach ($productos as $producto) : ?>
+            <div class="product-box">
+                <img src="<?php echo $producto['imagen_url']; ?>" alt="<?php echo $producto['nombre']; ?>" class="product-img">
+                <h2 class="product-title"><?php echo $producto['nombre']; ?></h2>
+                <span class="price"><?php echo '$' . $producto['precio']; ?></span>
+                <!-- Puedes agregar el botón de agregar al carrito u otras acciones aquí -->
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        <?php endforeach; ?>
+    </div>
+
+    <!-- Sección de paginación -->
+    <div class="pagination">
+        <?php
+        // Agregar enlaces para la paginación
+        for ($i = 1; $i <= $total_paginas; $i++) {
+            echo "<a href='?pagina=$i'>$i</a> ";
+        }
+        ?>
+    </div>
+</section>
+
+<section class="shop container">
+    <h2 class="section-title">Productos</h2>
+    <!-- Content -->
+    <div class="shop-content">
+        <!-- Box 1 -->
+        <div class="product-box">
+            <img src="../../img/Producto/zapanegra.jpg" alt="#" class="product-img">
+            <h2 class="product-title">Bota0</h2>
+            <span class="price">$5500</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+
+
+
+        <!-- Box 1 -->
+        <div class="product-box">
+            <img src="../../img/Producto/zapanegra.jpg" alt="#" class="product-img">
+            <h2 class="product-title">Bota1</h2>
+            <span class="price">$5500</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+
+        <!-- Box 1 -->
+        <div class="product-box">
+            <img src="../../img/Producto/zapanegra.jpg" alt="#" class="product-img">
+            <h2 class="product-title">Bota2</h2>
+            <span class="price">$5500</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+
+        <!-- Box 1 -->
+        <div class="product-box">
+            <img src="../../img/Producto/zapanegra.jpg" alt="#" class="product-img">
+            <h2 class="product-title">Bota0</h2>
+            <span class="price">$5500</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+
+
+
+    </div>
+</section>
+
+<?php
+require_once('c://xampp/htdocs/AbbaR/components/footer.html')
+
+?>

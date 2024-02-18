@@ -27,6 +27,9 @@ section{
 
 
 /*Cart*/
+.cart{
+    z-index:3;
+}
 .detail-box{
     display: grid;
     row-gap: 0.5rem;
@@ -34,6 +37,7 @@ section{
 .cart-product-title{
     font-size: 1rem;
     text-transform: uppercase;
+    color: var(--text-color);;
 }
 
 .cart-price{
@@ -104,6 +108,7 @@ section{
     font-weight: 600;
     text-align: center;
     margin-bottom: 1.5rem;
+    color:var(--text-color);
 
 }
 .shop{
@@ -138,14 +143,18 @@ disponible cuando sea necesario.*/
 }
 
 .product-title{
+    color:var(--text-color);
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
 }
-
+.product-box .product-title {
+    color:var(--text-color); /* Establece el color de letra a negro solo para los títulos de productos */
+}
 .price{
     font-weight: 500;
+    color:var(--text-color);
 }
 
 .add-cart{
@@ -158,36 +167,7 @@ disponible cuando sea necesario.*/
     cursor: pointer;
 
 }
-/*este menu es para todos menos index o carro*/
-.menusimple{
-    padding: 10px 0; /* Espacio interno en la parte superior e inferior del menú */
-    text-align: center; /* Alineación del texto al centro del menú */
-}
-.menusimple ul {
-        list-style: none;
-}
 
-.menusimple li {
-        display: inline-block; /* Coloca los elementos de lista en línea horizontalmente */
-        margin: 0 15px; /* Espacio horizontal entre elementos de la lista */
-}
-
-.menusimple a {
-        text-decoration: none;
-        color: #0a0909; 
-        font-weight: bold;
-        font-size: 20px;
-}
-
-.menusimple a:hover {
-        text-decoration: none; /* Subrayado al pasar el cursor */
-        border-radius: 2px;
-        box-shadow:
-        0px 0px 5px rgb(23, 20, 39, 0.9),
-        0px 0px 5px rgb(23, 20, 39, 0.9),
-        0px 0px 5px rgb(23, 20, 39, 0.9),
-        0px 0px 5px rgb(23, 20, 39, 0.3);
-    }
 
 /*"249"
 "32%" es el valor de saturación (Saturation)el color es moderadamente saturado,
@@ -195,7 +175,7 @@ no demasiado vibrante ni apagado.
 "17%" es el valor de luminosidad (Lightness)y afecta al brillo del color.
 el color es relativamente oscuro.*/
 .add-cart:hover{
-    background: hsl(249, 32%, 17%);
+    background: var(--main-color);
 }
 
 @media (max-width: 1080px) {

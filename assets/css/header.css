@@ -16,6 +16,9 @@ font-family: 'Open Sans', sans-serif;
     --color-texto:#ddd2d2;
     --color-fondo:#091220;
     --color-body:#0D1A2D;
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg--color: #fff0f0;
 
 }
 
@@ -25,6 +28,7 @@ font-family: 'Open Sans', sans-serif;
     padding: 0;
     
 }
+
 
 header {
     background-color: #091220;
@@ -67,7 +71,7 @@ header nav ul {
     text-decoration: none;
     font-family: 'Kumbh Sans', sans-serif;
     color: #ddd2d2;
-    font-weight: bold;
+    
 }
 
 
@@ -92,8 +96,9 @@ header.search-container {
     font-size: 2.5rem;
     cursor: pointer;
     margin-right: 20px;
-    color: red;
-    
+    /*background-image: linear-gradient(to right, #814C25, #FFDE59); 
+    border-radius: 30%;
+    */
 }
 .cart{
     position: fixed;
@@ -108,6 +113,13 @@ header.search-container {
     
 }
 
+.cart .cart-title,
+.cart .total-title,
+.cart .total-price {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--text-color);
+}
+
 .cart.active{
     right: 0;
 }
@@ -117,6 +129,7 @@ header.search-container {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 2rem;
+    color: var(--text-color);
     
 }
 .secondary-nav .icons {
@@ -133,9 +146,14 @@ header.search-container {
 .secondary-nav .links a {
     margin-left: 20px; /* Ajusta el espaciado entre enlaces según sea necesario */
     text-decoration: none;
-    color: #333; /* Cambia el color del texto según tus preferencias */
+    color: var(--bg--color); /* Cambia el color del texto según tus preferencias */
 }
 
 .secondary-nav .links a:hover {
     text-decoration: underline; /* Efecto de subrayado al pasar el cursor */
+}
+
+.text-slide i{
+    letter-spacing: 3px;
+    font-family: 'Tajawal', sans-serif
 }
