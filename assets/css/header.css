@@ -33,7 +33,7 @@ h1{
     color: #171427;
 }
 
-header {
+header  {
     background-color: var(--color-fondo);
 
 }
@@ -176,9 +176,11 @@ button.btn {
     border-image: linear-gradient(to right, #814C25, #FFDE59); 
     border-image-slice: 1; 
     padding: 5px 10px; 
-    color: white; 
+    color: rgb(177, 119, 13); 
     font-family: 'Kumbh Sans', sans-serif;
     letter-spacing: 1px;
+    font-weight: bold; /* Texto en negrita */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
 button.btn:hover {

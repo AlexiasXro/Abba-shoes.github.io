@@ -4,7 +4,7 @@
 
 
 .faq-section {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../img/pregun.png');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/pregun.png');
     background-size: cover;
     color: #fff;
     font-family: 'Kumbh Sans', sans-serif;
@@ -38,3 +38,13 @@
     text-decoration: underline; 
     color: #ffa60081; /* Cambiar el color del enlace al pasar el cursor sobre él */
 }
+
+/*carta historia*/
+.card {
+    background: linear-gradient(rgba(237, 235, 235, 0.061), rgba(255, 255, 255, 0.16)); /* Degradado blanco transparente */
+    border: none; 
+    max-width: 300px;
+    color: #fff;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
